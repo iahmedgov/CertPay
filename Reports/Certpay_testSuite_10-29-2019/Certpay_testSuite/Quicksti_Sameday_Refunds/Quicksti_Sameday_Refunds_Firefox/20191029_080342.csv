@@ -1,0 +1,46 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Quicksti_Sameday_Refunds,Firefox 68.0,,,2019-10-29 08:04:38,2019-10-29 08:35:40,31m - 2.404s,INCOMPLETE
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_001_VISA_SingleTxn_Sameday_FullRefund,Firefox 68.0,,,2019-10-29 08:04:39,2019-10-29 08:14:04,9m - 24.794s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 08:04:40,2019-10-29 08:04:40,0.009s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 08:04:41,2019-10-29 08:04:44,2.664s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 08:04:44,2019-10-29 08:04:44,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 08:04:44,2019-10-29 08:14:01,9m - 16.713s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 08:14:01,2019-10-29 08:14:04,3.224s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-29 08:14:04,2019-10-29 08:14:04,0.001s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_002_VISA_MultiTxn_Sameday_FullRefund,Firefox 68.0,,,2019-10-29 08:14:04,2019-10-29 08:22:19,8m - 15.038s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 08:14:04,2019-10-29 08:14:04,0.000s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:14:07,0.425s,PASSED
+amountList = [],Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:14:07,0.001s,PASSED
+referenceList = [],Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:14:07,0.001s,PASSED
+paymentTypeList = [],Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:14:07,0.001s,PASSED
+quantityList = [],Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:14:07,0.000s,PASSED
+commentsList = [],Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:14:07,0.001s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:14:07,0.000s,PASSED
+list = new java.util.ArrayList(),Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:14:07,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 08:14:07,2019-10-29 08:22:17,8m - 9.453s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 08:22:17,2019-10-29 08:22:19,2.156s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-29 08:22:19,2019-10-29 08:22:19,0.001s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_003_VISA_SingleTxn_Sameday_PartialRefund,Firefox 68.0,,,2019-10-29 08:22:19,2019-10-29 08:30:16,7m - 56.807s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 08:22:19,2019-10-29 08:22:19,0.001s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 08:22:19,2019-10-29 08:22:20,0.087s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 08:22:20,2019-10-29 08:22:20,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 08:22:20,2019-10-29 08:30:07,7m - 47.946s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 08:30:07,2019-10-29 08:30:16,8.162s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-29 08:30:16,2019-10-29 08:30:16,0.000s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_004_VISA_MultiTxn_Sameday_PartialRefund,Firefox 68.0,,,2019-10-29 08:30:16,2019-10-29 08:35:40,5m - 24.286s,FAILED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 08:30:16,2019-10-29 08:30:16,0.000s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:30:17,0.134s,PASSED
+amountList = [],Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:30:17,0.001s,PASSED
+referenceList = [],Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:30:17,0.000s,PASSED
+paymentTypeList = [],Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:30:17,0.001s,PASSED
+quantityList = [],Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:30:17,0.000s,PASSED
+commentsList = [],Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:30:17,0.000s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:30:17,0.000s,PASSED
+list = new java.util.ArrayList(),Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:30:17,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 08:30:17,2019-10-29 08:35:37,5m - 20.430s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 08:35:37,2019-10-29 08:35:40,2.749s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-29 08:35:40,2019-10-29 08:35:40,0.001s,PASSED

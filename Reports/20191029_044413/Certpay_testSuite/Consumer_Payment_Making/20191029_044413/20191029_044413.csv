@@ -1,0 +1,44 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Consumer_Payment_Making,Chrome 76.0.3809.100,,,2019-10-29 04:44:25,2019-10-29 04:48:59,4m - 34.250s,INCOMPLETE
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_001_Credit_SingleLine_Payment,Chrome 76.0.3809.100,,,2019-10-29 04:44:25,2019-10-29 04:45:19,53.231s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:44:27,2019-10-29 04:44:27,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-29 04:44:28,2019-10-29 04:45:03,35.171s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-29 04:45:03,2019-10-29 04:45:18,15.183s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-29 04:45:18,2019-10-29 04:45:18,0.297s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:45:19,2019-10-29 04:45:19,0.002s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_002_Credit_MultiLine_Payment,Chrome 76.0.3809.100,,,2019-10-29 04:45:19,2019-10-29 04:46:21,1m - 2.119s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:45:20,2019-10-29 04:45:20,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-29 04:45:22,2019-10-29 04:46:18,55.985s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-29 04:46:18,2019-10-29 04:46:21,2.382s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-29 04:46:21,2019-10-29 04:46:21,0.074s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:46:21,2019-10-29 04:46:21,0.001s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_003_Echeck_Checking_SingleLine_Payment,Chrome 76.0.3809.100,,,2019-10-29 04:46:21,2019-10-29 04:47:11,49.928s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:46:22,2019-10-29 04:46:22,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-29 04:46:23,2019-10-29 04:47:02,39.578s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-29 04:47:02,2019-10-29 04:47:10,8.182s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-29 04:47:10,2019-10-29 04:47:11,0.215s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:47:11,2019-10-29 04:47:11,0.002s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_004_Echeck_Checking_MultiLine_Payment,Chrome 76.0.3809.100,,,2019-10-29 04:47:12,2019-10-29 04:47:57,45.050s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:47:14,2019-10-29 04:47:14,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-29 04:47:15,2019-10-29 04:47:53,38.355s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-29 04:47:53,2019-10-29 04:47:57,3.894s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-29 04:47:57,2019-10-29 04:47:57,0.063s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:47:57,2019-10-29 04:47:57,0.001s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_005_Echeck_Savings_SingleLine_Payment,Chrome 76.0.3809.100,,,2019-10-29 04:47:57,2019-10-29 04:48:33,35.936s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:47:58,2019-10-29 04:47:58,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-29 04:47:58,2019-10-29 04:48:23,24.761s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-29 04:48:23,2019-10-29 04:48:33,9.573s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-29 04:48:33,2019-10-29 04:48:33,0.068s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:48:33,2019-10-29 04:48:33,0.000s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_006_Echeck_Savings_MultiLine_Payment,Chrome 76.0.3809.100,,,2019-10-29 04:48:33,2019-10-29 04:48:59,25.998s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:48:33,2019-10-29 04:48:33,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-29 04:48:35,2019-10-29 04:48:57,21.766s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-29 04:48:57,2019-10-29 04:48:59,2.012s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-29 04:48:59,2019-10-29 04:48:59,0.151s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 04:48:59,2019-10-29 04:48:59,0.001s,PASSED

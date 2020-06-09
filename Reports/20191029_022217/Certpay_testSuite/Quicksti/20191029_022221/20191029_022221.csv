@@ -1,0 +1,48 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Quicksti,Firefox 68.0,,,2019-10-29 02:23:06,2019-10-29 02:25:54,2m - 48.398s,INCOMPLETE
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_001_SingleBureauSite_SingleLinePayment,Firefox 68.0,,,2019-10-29 02:23:09,2019-10-29 02:23:54,45.754s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 02:23:11,2019-10-29 02:23:11,0.008s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 02:23:13,2019-10-29 02:23:17,3.720s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 02:23:17,2019-10-29 02:23:17,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 02:23:17,2019-10-29 02:23:54,37.827s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 02:23:54,2019-10-29 02:23:54,0.000s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_002_MultiBureauSite_SingleBureau_MultiLinePayment,Firefox 68.0,,,2019-10-29 02:23:54,2019-10-29 02:24:38,43.511s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 02:23:56,2019-10-29 02:23:56,0.002s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:23:58,0.247s,PASSED
+amountList = [],Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:23:58,0.001s,PASSED
+referenceList = [],Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:23:58,0.001s,PASSED
+paymentTypeList = [],Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:23:58,0.001s,PASSED
+quantityList = [],Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:23:58,0.001s,PASSED
+commentsList = [],Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:23:58,0.001s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:23:58,0.002s,PASSED
+list = new java.util.ArrayList(),Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:23:58,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 02:23:58,2019-10-29 02:24:38,40.038s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 02:24:38,2019-10-29 02:24:38,0.002s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_003_MultiBureauSite_SingleBureau_SingleLinePayment,Firefox 68.0,,,2019-10-29 02:24:38,2019-10-29 02:25:12,33.954s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 02:24:39,2019-10-29 02:24:39,0.000s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 02:24:40,2019-10-29 02:24:41,0.792s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 02:24:41,2019-10-29 02:24:41,0.002s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 02:24:41,2019-10-29 02:25:12,30.989s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 02:25:12,2019-10-29 02:25:12,0.002s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_004_MultiBureauSite_MultiBureaus_SingleLinePayment,Firefox 68.0,,,2019-10-29 02:25:12,2019-10-29 02:25:53,41.304s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 02:25:13,2019-10-29 02:25:13,0.000s,PASSED
+"data = findTestData(""Data Files/Certpay/MultiBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 02:25:14,2019-10-29 02:25:15,0.244s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 02:25:15,2019-10-29 02:25:53,38.535s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 02:25:53,2019-10-29 02:25:53,0.001s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_005_MultiBureauSite_MultiBureaus_MultiLinePayments,Firefox 68.0,,,2019-10-29 02:25:53,2019-10-29 02:25:54,0.845s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 02:25:53,2019-10-29 02:25:53,0.000s,PASSED
+"data = findTestData(""Certpay/MultiBureau_MultiLine"")",Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.080s,PASSED
+amountList = [],Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.002s,PASSED
+referenceList = [],Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.001s,PASSED
+paymentTypeList = [],Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.001s,PASSED
+quantityList = [],Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.001s,PASSED
+commentsList = [],Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.001s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.000s,PASSED
+list = new java.util.ArrayList(),Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.150s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 02:25:54,2019-10-29 02:25:54,0.000s,PASSED

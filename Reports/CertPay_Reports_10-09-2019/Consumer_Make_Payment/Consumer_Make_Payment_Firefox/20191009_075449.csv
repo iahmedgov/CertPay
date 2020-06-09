@@ -1,0 +1,291 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Consumer_Make_Payment,Firefox 68.0,,,2019-10-09 07:54:57,2019-10-09 08:03:56,8m - 58.616s,INCOMPLETE
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_001_Credit_SingleLine_Payment,Firefox 68.0,,,2019-10-09 07:54:59,2019-10-09 07:56:42,1m - 43.621s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-09 07:55:01,2019-10-09 07:55:01,0.053s,PASSED
+Start setup action : setupTestCase,Firefox 68.0,,,2019-10-09 07:55:01,2019-10-09 07:55:03,1.513s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:04,2019-10-09 07:55:25,21.646s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:25,2019-10-09 07:55:27,1.345s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:27,2019-10-09 07:55:30,3.169s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:30,2019-10-09 07:55:33,3.442s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/BANK_CARD""), ""Bank card"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:33,2019-10-09 07:55:35,1.737s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Firefox 68.0,,,2019-10-09 07:55:35,2019-10-09 07:55:37,2.177s,PASSED
+waitForPageLoad(0),Firefox 68.0,,,2019-10-09 07:55:37,2019-10-09 07:55:37,0.042s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/CARD_TYPE""), CardType, ""CardType"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:37,2019-10-09 07:55:38,1.299s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:38,2019-10-09 07:55:40,1.302s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:40,2019-10-09 07:55:42,2.697s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Firefox 68.0,,,2019-10-09 07:55:42,2019-10-09 07:55:45,2.352s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Firefox 68.0,,,2019-10-09 07:55:45,2019-10-09 07:55:46,1.476s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Firefox 68.0,,,2019-10-09 07:55:46,2019-10-09 07:55:46,0.186s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:46,2019-10-09 07:55:52,5.496s,PASSED
+waitForPageLoad(2),Firefox 68.0,,,2019-10-09 07:55:52,2019-10-09 07:55:52,0.014s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:55:52,2019-10-09 07:55:55,2.668s,PASSED
+delay(mediumWait),Firefox 68.0,,,2019-10-09 07:55:55,2019-10-09 07:56:00,5.026s,PASSED
+"newList = pages.Payment_Page.setCardDetails(cardNum, securityCode, expYear, expMonth)",Firefox 68.0,,,2019-10-09 07:56:00,2019-10-09 07:56:04,4.208s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:04,2019-10-09 07:56:05,0.711s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:05,2019-10-09 07:56:07,2.738s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:07,2019-10-09 07:56:10,2.571s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, CardType, """")",Firefox 68.0,,,2019-10-09 07:56:10,2019-10-09 07:56:12,2.590s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:12,2019-10-09 07:56:13,0.954s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:13,2019-10-09 07:56:18,4.722s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/APPROVED""), 30)",Firefox 68.0,,,2019-10-09 07:56:18,2019-10-09 07:56:18,0.094s,PASSED
+PaymentId = pages.Payment_Page.verifyCardPaymentApproval(referenceNum),Firefox 68.0,,,2019-10-09 07:56:18,2019-10-09 07:56:21,3.213s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:21,2019-10-09 07:56:23,1.223s,PASSED
+waitForPageLoad(10),Firefox 68.0,,,2019-10-09 07:56:23,2019-10-09 07:56:23,0.016s,PASSED
+pages.Search_Page.switchToWindow(),Firefox 68.0,,,2019-10-09 07:56:23,2019-10-09 07:56:23,0.633s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/CREDIT_OR_DEBIT_CARD""), ""Credit card"", [mediumWait])",Firefox 68.0,,,2019-10-09 07:56:23,2019-10-09 07:56:26,2.999s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, cardNum, accNum)",Firefox 68.0,,,2019-10-09 07:56:26,2019-10-09 07:56:28,1.557s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:28,2019-10-09 07:56:31,3.149s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentId),Firefox 68.0,,,2019-10-09 07:56:31,2019-10-09 07:56:31,0.362s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:31,2019-10-09 07:56:32,0.788s,PASSED
+delay(mediumWait),Firefox 68.0,,,2019-10-09 07:56:32,2019-10-09 07:56:37,5.035s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 0)",Firefox 68.0,,,2019-10-09 07:56:37,2019-10-09 07:56:37,0.114s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:37,2019-10-09 07:56:38,0.932s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:38,2019-10-09 07:56:39,0.834s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:39,2019-10-09 07:56:40,1.032s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-09 07:56:40,2019-10-09 07:56:42,2.222s,PASSED
+Start tear down : tearDownTestCase,Firefox 68.0,,,2019-10-09 07:56:42,2019-10-09 07:56:42,0.001s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-09 07:56:42,2019-10-09 07:56:42,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-09 07:56:42,2019-10-09 07:56:42,0.002s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_002_Credit_MultiLine_Payment,Firefox 68.0,,,2019-10-09 07:56:42,2019-10-09 07:58:16,1m - 33.225s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-09 07:56:43,2019-10-09 07:56:43,0.001s,PASSED
+Start setup action : setupTestCase,Firefox 68.0,,,2019-10-09 07:56:43,2019-10-09 07:56:43,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:43,2019-10-09 07:56:56,12.307s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:56,2019-10-09 07:56:57,0.800s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:56:57,2019-10-09 07:57:00,3.361s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:00,2019-10-09 07:57:03,3.384s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Firefox 68.0,,,2019-10-09 07:57:03,2019-10-09 07:57:06,2.985s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/ADD_ANOTHER_PROPERTY""), ""Multi-Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:06,2019-10-09 07:57:09,2.674s,PASSED
+"pages.Payment_Page.setAmount(""2"", paymentAmount2, ""Payment for testing"", ""22"")",Firefox 68.0,,,2019-10-09 07:57:09,2019-10-09 07:57:11,1.865s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/BANK_CARD""), ""Bank card"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:11,2019-10-09 07:57:12,1.406s,PASSED
+waitForPageLoad(2),Firefox 68.0,,,2019-10-09 07:57:12,2019-10-09 07:57:12,0.016s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/CARD_TYPE""), cardType, ""CardType"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:12,2019-10-09 07:57:13,1.201s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:13,2019-10-09 07:57:15,1.201s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:15,2019-10-09 07:57:18,3.726s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Firefox 68.0,,,2019-10-09 07:57:18,2019-10-09 07:57:21,2.765s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Firefox 68.0,,,2019-10-09 07:57:21,2019-10-09 07:57:23,1.435s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Firefox 68.0,,,2019-10-09 07:57:23,2019-10-09 07:57:23,0.136s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:23,2019-10-09 07:57:28,5.135s,PASSED
+waitForPageLoad(0),Firefox 68.0,,,2019-10-09 07:57:28,2019-10-09 07:57:28,0.119s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:28,2019-10-09 07:57:31,3.172s,PASSED
+"pages.Payment_Page.setCardDetails(cardNum, securityCode, expYear, expMonth)",Firefox 68.0,,,2019-10-09 07:57:31,2019-10-09 07:57:35,4.217s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:35,2019-10-09 07:57:36,0.679s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:36,2019-10-09 07:57:40,3.479s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:40,2019-10-09 07:57:43,3.301s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, cardType, """")",Firefox 68.0,,,2019-10-09 07:57:43,2019-10-09 07:57:45,2.550s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:45,2019-10-09 07:57:46,1.024s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:46,2019-10-09 07:57:50,3.880s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/APPROVED""), 30)",Firefox 68.0,,,2019-10-09 07:57:50,2019-10-09 07:57:50,0.165s,PASSED
+PaymentID = pages.Payment_Page.verifyCardPaymentApproval(referenceNum),Firefox 68.0,,,2019-10-09 07:57:50,2019-10-09 07:57:54,3.234s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:57:54,2019-10-09 07:57:55,1.020s,PASSED
+waitForPageLoad(10),Firefox 68.0,,,2019-10-09 07:57:55,2019-10-09 07:57:55,0.024s,PASSED
+pages.Search_Page.switchToWindow(),Firefox 68.0,,,2019-10-09 07:57:55,2019-10-09 07:57:56,1.189s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/CREDIT_OR_DEBIT_CARD""), ""Credit card"", [mediumWait])",Firefox 68.0,,,2019-10-09 07:57:56,2019-10-09 07:57:59,3.536s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, cardNum, accNum)",Firefox 68.0,,,2019-10-09 07:57:59,2019-10-09 07:58:01,1.623s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:01,2019-10-09 07:58:05,3.663s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Firefox 68.0,,,2019-10-09 07:58:05,2019-10-09 07:58:05,0.291s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:05,2019-10-09 07:58:06,0.831s,PASSED
+delay(mediumWait),Firefox 68.0,,,2019-10-09 07:58:06,2019-10-09 07:58:11,5.003s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 0)",Firefox 68.0,,,2019-10-09 07:58:11,2019-10-09 07:58:11,0.102s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:11,2019-10-09 07:58:12,0.968s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:12,2019-10-09 07:58:13,0.697s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:13,2019-10-09 07:58:14,0.951s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-09 07:58:14,2019-10-09 07:58:16,2.048s,PASSED
+Start tear down : tearDownTestCase,Firefox 68.0,,,2019-10-09 07:58:16,2019-10-09 07:58:16,0.000s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-09 07:58:16,2019-10-09 07:58:16,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-09 07:58:16,2019-10-09 07:58:16,0.000s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_003_Echeck_Checking_SingleLine_Payment,Firefox 68.0,,,2019-10-09 07:58:16,2019-10-09 07:59:38,1m - 22.464s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-09 07:58:16,2019-10-09 07:58:16,0.000s,PASSED
+Start setup action : setupTestCase,Firefox 68.0,,,2019-10-09 07:58:16,2019-10-09 07:58:16,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:17,2019-10-09 07:58:26,9.438s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:26,2019-10-09 07:58:27,0.921s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:27,2019-10-09 07:58:30,2.997s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:30,2019-10-09 07:58:33,2.623s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/ELECTRONIC_CHECK""), ""Bank card"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:33,2019-10-09 07:58:36,3.370s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Firefox 68.0,,,2019-10-09 07:58:36,2019-10-09 07:58:38,1.869s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:38,2019-10-09 07:58:39,1.236s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:39,2019-10-09 07:58:42,2.705s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Firefox 68.0,,,2019-10-09 07:58:42,2019-10-09 07:58:44,2.209s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Firefox 68.0,,,2019-10-09 07:58:44,2019-10-09 07:58:45,1.335s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Firefox 68.0,,,2019-10-09 07:58:45,2019-10-09 07:58:46,0.136s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:46,2019-10-09 07:58:51,5.035s,PASSED
+waitForPageLoad(2),Firefox 68.0,,,2019-10-09 07:58:51,2019-10-09 07:58:51,0.016s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:51,2019-10-09 07:58:53,2.832s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/ACC_TYPE_CHECKING""), ""Checking"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:53,2019-10-09 07:58:55,1.404s,PASSED
+"pages.Payment_Page.setElectronicCheckInformation(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CHECKING_ACCOUNT_NUMBER""), findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CONFIRM_CHECKING_ACC_NUM""), routingNum, checkingAccNum)",Firefox 68.0,,,2019-10-09 07:58:55,2019-10-09 07:58:57,2.085s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:57,2019-10-09 07:58:58,0.793s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/SIGNATURE""), firstName, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:58,2019-10-09 07:58:58,0.663s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/AGREEMENT""), ""Yes"", ""Agreement"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:58,2019-10-09 07:58:59,0.652s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CHECK_CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:58:59,2019-10-09 07:59:00,1.117s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:00,2019-10-09 07:59:03,2.972s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:03,2019-10-09 07:59:06,3.199s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, ""VISA"", ""Checking"")",Firefox 68.0,,,2019-10-09 07:59:06,2019-10-09 07:59:10,3.580s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:10,2019-10-09 07:59:11,0.961s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:11,2019-10-09 07:59:16,4.749s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PENDING""), 30)",Firefox 68.0,,,2019-10-09 07:59:16,2019-10-09 07:59:16,0.108s,PASSED
+PaymentID = pages.Payment_Page.verifyECheckPaymentApproval(referenceNum),Firefox 68.0,,,2019-10-09 07:59:16,2019-10-09 07:59:18,2.202s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:18,2019-10-09 07:59:19,1.010s,PASSED
+waitForPageLoad(10),Firefox 68.0,,,2019-10-09 07:59:19,2019-10-09 07:59:19,0.013s,PASSED
+pages.Search_Page.switchToWindow(),Firefox 68.0,,,2019-10-09 07:59:19,2019-10-09 07:59:20,0.991s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/ELECTRONIC_CHECK""), ""Credit card"", [mediumWait])",Firefox 68.0,,,2019-10-09 07:59:20,2019-10-09 07:59:23,3.084s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, cardNum, checkingAccNum)",Firefox 68.0,,,2019-10-09 07:59:23,2019-10-09 07:59:25,1.684s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:25,2019-10-09 07:59:28,3.160s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Firefox 68.0,,,2019-10-09 07:59:28,2019-10-09 07:59:28,0.292s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:28,2019-10-09 07:59:29,0.809s,PASSED
+delay(mediumWait),Firefox 68.0,,,2019-10-09 07:59:29,2019-10-09 07:59:34,5.003s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 30)",Firefox 68.0,,,2019-10-09 07:59:34,2019-10-09 07:59:34,0.093s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:34,2019-10-09 07:59:35,0.923s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:35,2019-10-09 07:59:36,0.742s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:36,2019-10-09 07:59:37,0.805s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-09 07:59:37,2019-10-09 07:59:38,1.586s,PASSED
+Start tear down : tearDownTestCase,Firefox 68.0,,,2019-10-09 07:59:38,2019-10-09 07:59:38,0.000s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-09 07:59:38,2019-10-09 07:59:38,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-09 07:59:38,2019-10-09 07:59:38,0.001s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_004_Echeck_Checking_MultiLine_Payment,Firefox 68.0,,,2019-10-09 07:59:38,2019-10-09 08:01:12,1m - 33.908s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-09 07:59:38,2019-10-09 07:59:38,0.000s,PASSED
+Start setup action : setupTestCase,Firefox 68.0,,,2019-10-09 07:59:38,2019-10-09 07:59:38,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:39,2019-10-09 07:59:49,9.982s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:49,2019-10-09 07:59:50,0.725s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:50,2019-10-09 07:59:52,2.939s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:52,2019-10-09 07:59:55,2.732s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/ELECTRONIC_CHECK""), ""Bank card"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 07:59:55,2019-10-09 07:59:59,3.549s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Firefox 68.0,,,2019-10-09 07:59:59,2019-10-09 08:00:01,2.190s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/ADD_ANOTHER_PROPERTY""), ""Multi-Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:01,2019-10-09 08:00:04,3.355s,PASSED
+"pages.Payment_Page.setAmount(""2"", paymentAmount2, ""Payment for testing"", referenceNum)",Firefox 68.0,,,2019-10-09 08:00:04,2019-10-09 08:00:06,2.113s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:06,2019-10-09 08:00:08,1.273s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:08,2019-10-09 08:00:11,3.001s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Firefox 68.0,,,2019-10-09 08:00:11,2019-10-09 08:00:14,3.254s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Firefox 68.0,,,2019-10-09 08:00:14,2019-10-09 08:00:16,2.419s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Firefox 68.0,,,2019-10-09 08:00:16,2019-10-09 08:00:17,0.293s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:17,2019-10-09 08:00:22,5.775s,PASSED
+waitForPageLoad(2),Firefox 68.0,,,2019-10-09 08:00:22,2019-10-09 08:00:23,0.071s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:23,2019-10-09 08:00:27,4.284s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/ACC_TYPE_CHECKING""), ""Checking"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:27,2019-10-09 08:00:30,3.642s,PASSED
+"pages.Payment_Page.setElectronicCheckInformation(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CHECKING_ACCOUNT_NUMBER""), findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CONFIRM_CHECKING_ACC_NUM""), routingNum, checkingAccNum)",Firefox 68.0,,,2019-10-09 08:00:30,2019-10-09 08:00:33,2.106s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:33,2019-10-09 08:00:33,0.733s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/SIGNATURE""), firstName, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:33,2019-10-09 08:00:34,0.670s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/AGREEMENT""), ""Yes"", ""Agreement"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:34,2019-10-09 08:00:35,0.650s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CHECK_CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:35,2019-10-09 08:00:36,0.894s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:36,2019-10-09 08:00:39,3.545s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:39,2019-10-09 08:00:42,3.180s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, ""Discover"", ""Checking"")",Firefox 68.0,,,2019-10-09 08:00:42,2019-10-09 08:00:46,3.879s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:46,2019-10-09 08:00:47,1.278s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:47,2019-10-09 08:00:52,4.506s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PENDING""), 30)",Firefox 68.0,,,2019-10-09 08:00:52,2019-10-09 08:00:52,0.077s,PASSED
+PaymentID = pages.Payment_Page.verifyECheckPaymentApproval(referenceNum),Firefox 68.0,,,2019-10-09 08:00:52,2019-10-09 08:00:54,2.196s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:00:54,2019-10-09 08:00:55,1.188s,PASSED
+waitForPageLoad(10),Firefox 68.0,,,2019-10-09 08:00:55,2019-10-09 08:00:56,0.195s,PASSED
+pages.Search_Page.switchToWindow(),Firefox 68.0,,,2019-10-09 08:00:56,2019-10-09 08:00:57,1.088s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/ELECTRONIC_CHECK""), ""Credit card"", [mediumWait])",Firefox 68.0,,,2019-10-09 08:00:57,2019-10-09 08:01:00,3.563s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, VISA, checkingAccNum)",Firefox 68.0,,,2019-10-09 08:01:00,2019-10-09 08:01:02,1.628s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:02,2019-10-09 08:01:06,4.370s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Firefox 68.0,,,2019-10-09 08:01:06,2019-10-09 08:01:07,0.641s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:07,2019-10-09 08:01:08,0.991s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 0)",Firefox 68.0,,,2019-10-09 08:01:08,2019-10-09 08:01:08,0.186s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:08,2019-10-09 08:01:09,1.000s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:09,2019-10-09 08:01:10,0.684s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:10,2019-10-09 08:01:11,0.829s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-09 08:01:11,2019-10-09 08:01:12,1.483s,PASSED
+Start tear down : tearDownTestCase,Firefox 68.0,,,2019-10-09 08:01:12,2019-10-09 08:01:12,0.000s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-09 08:01:12,2019-10-09 08:01:12,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-09 08:01:12,2019-10-09 08:01:12,0.000s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_005_Echeck_Savings_SingleLine_Payment,Firefox 68.0,,,2019-10-09 08:01:12,2019-10-09 08:02:30,1m - 18.065s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-09 08:01:12,2019-10-09 08:01:12,0.000s,PASSED
+Start setup action : setupTestCase,Firefox 68.0,,,2019-10-09 08:01:12,2019-10-09 08:01:12,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:13,2019-10-09 08:01:25,11.823s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:25,2019-10-09 08:01:25,0.737s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:25,2019-10-09 08:01:28,3.187s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:28,2019-10-09 08:01:31,2.822s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/ELECTRONIC_CHECK""), ""Electronic check"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:31,2019-10-09 08:01:35,3.482s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Firefox 68.0,,,2019-10-09 08:01:35,2019-10-09 08:01:37,2.057s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:37,2019-10-09 08:01:38,1.263s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:38,2019-10-09 08:01:41,2.828s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Firefox 68.0,,,2019-10-09 08:01:41,2019-10-09 08:01:43,2.026s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Firefox 68.0,,,2019-10-09 08:01:43,2019-10-09 08:01:44,1.360s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Firefox 68.0,,,2019-10-09 08:01:44,2019-10-09 08:01:44,0.130s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:44,2019-10-09 08:01:49,5.013s,PASSED
+waitForPageLoad(2),Firefox 68.0,,,2019-10-09 08:01:49,2019-10-09 08:01:49,0.020s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:49,2019-10-09 08:01:52,2.680s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/ACC_TYPE_SAVINGS""), ""Checking"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:52,2019-10-09 08:01:54,1.424s,PASSED
+"pages.Payment_Page.setElectronicCheckInformation(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CHECKING_ACCOUNT_NUMBER""), findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CONFIRM_CHECKING_ACC_NUM""), routingNum, checkingAccNum)",Firefox 68.0,,,2019-10-09 08:01:54,2019-10-09 08:01:56,2.164s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:56,2019-10-09 08:01:56,0.690s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/SIGNATURE""), firstName, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:56,2019-10-09 08:01:57,0.659s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/AGREEMENT""), ""Yes"", ""Agreement"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:57,2019-10-09 08:01:58,0.689s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CHECK_CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:58,2019-10-09 08:01:59,0.926s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:01:59,2019-10-09 08:02:01,2.773s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:01,2019-10-09 08:02:04,2.758s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, ""Discover"", ""Savings"")",Firefox 68.0,,,2019-10-09 08:02:04,2019-10-09 08:02:08,3.566s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:08,2019-10-09 08:02:09,0.927s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:09,2019-10-09 08:02:13,3.875s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PENDING""), 30)",Firefox 68.0,,,2019-10-09 08:02:13,2019-10-09 08:02:13,0.108s,PASSED
+PaymentID = pages.Payment_Page.verifyECheckPaymentApproval(referenceNum),Firefox 68.0,,,2019-10-09 08:02:13,2019-10-09 08:02:15,2.195s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:15,2019-10-09 08:02:16,0.993s,PASSED
+waitForPageLoad(10),Firefox 68.0,,,2019-10-09 08:02:16,2019-10-09 08:02:16,0.063s,PASSED
+pages.Search_Page.switchToWindow(),Firefox 68.0,,,2019-10-09 08:02:16,2019-10-09 08:02:17,1.134s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/ELECTRONIC_CHECK""), ""Credit card"", [mediumWait])",Firefox 68.0,,,2019-10-09 08:02:17,2019-10-09 08:02:20,3.061s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, VISA, checkingAccNum)",Firefox 68.0,,,2019-10-09 08:02:20,2019-10-09 08:02:22,1.690s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:22,2019-10-09 08:02:25,2.915s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Firefox 68.0,,,2019-10-09 08:02:25,2019-10-09 08:02:25,0.282s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:25,2019-10-09 08:02:26,0.726s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 30)",Firefox 68.0,,,2019-10-09 08:02:26,2019-10-09 08:02:26,0.099s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:26,2019-10-09 08:02:27,0.954s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:27,2019-10-09 08:02:28,0.745s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:28,2019-10-09 08:02:28,0.845s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-09 08:02:28,2019-10-09 08:02:30,1.674s,PASSED
+Start tear down : tearDownTestCase,Firefox 68.0,,,2019-10-09 08:02:30,2019-10-09 08:02:30,0.001s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-09 08:02:30,2019-10-09 08:02:30,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-09 08:02:30,2019-10-09 08:02:30,0.000s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_006_Echeck_Savings_MultiLine_Payment,Firefox 68.0,,,2019-10-09 08:02:30,2019-10-09 08:03:56,1m - 25.609s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-09 08:02:30,2019-10-09 08:02:30,0.002s,PASSED
+Start setup action : setupTestCase,Firefox 68.0,,,2019-10-09 08:02:30,2019-10-09 08:02:30,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:31,2019-10-09 08:02:40,9.187s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:40,2019-10-09 08:02:41,0.730s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:41,2019-10-09 08:02:44,2.792s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:44,2019-10-09 08:02:46,2.606s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/ELECTRONIC_CHECK""), ""Electronic check"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:46,2019-10-09 08:02:50,3.660s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Firefox 68.0,,,2019-10-09 08:02:50,2019-10-09 08:02:52,1.854s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/ADD_ANOTHER_PROPERTY""), ""Multi-Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:52,2019-10-09 08:02:54,2.646s,PASSED
+"pages.Payment_Page.setAmount(""2"", paymentAmount2, ""Payment for testing"", referenceNum)",Firefox 68.0,,,2019-10-09 08:02:54,2019-10-09 08:02:56,1.861s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:56,2019-10-09 08:02:57,1.227s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:02:57,2019-10-09 08:03:00,2.579s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Firefox 68.0,,,2019-10-09 08:03:00,2019-10-09 08:03:02,2.364s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Firefox 68.0,,,2019-10-09 08:03:02,2019-10-09 08:03:04,1.415s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:04,2019-10-09 08:03:07,2.935s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:07,2019-10-09 08:03:10,3.183s,PASSED
+waitForPageLoad(2),Firefox 68.0,,,2019-10-09 08:03:10,2019-10-09 08:03:10,0.020s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:10,2019-10-09 08:03:12,2.630s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/ACC_TYPE_SAVINGS""), ""Checking"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:12,2019-10-09 08:03:14,1.471s,PASSED
+"pages.Payment_Page.setElectronicCheckInformation(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CHECKING_ACCOUNT_NUMBER""), findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CONFIRM_CHECKING_ACC_NUM""), routingNum, checkingAccNum)",Firefox 68.0,,,2019-10-09 08:03:14,2019-10-09 08:03:16,2.118s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:16,2019-10-09 08:03:17,0.726s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/SIGNATURE""), firstName, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:17,2019-10-09 08:03:17,0.687s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/AGREEMENT""), ""Yes"", ""Agreement"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:17,2019-10-09 08:03:18,0.658s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CHECK_CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:18,2019-10-09 08:03:19,0.952s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:19,2019-10-09 08:03:22,2.423s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:22,2019-10-09 08:03:24,2.788s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, """", ""Savings"")",Firefox 68.0,,,2019-10-09 08:03:24,2019-10-09 08:03:28,3.451s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:28,2019-10-09 08:03:29,0.912s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:29,2019-10-09 08:03:33,4.617s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PENDING""), 30)",Firefox 68.0,,,2019-10-09 08:03:33,2019-10-09 08:03:34,0.248s,PASSED
+PaymentID = pages.Payment_Page.verifyECheckPaymentApproval(referenceNum),Firefox 68.0,,,2019-10-09 08:03:34,2019-10-09 08:03:36,2.221s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:36,2019-10-09 08:03:37,1.307s,PASSED
+waitForPageLoad(10),Firefox 68.0,,,2019-10-09 08:03:37,2019-10-09 08:03:37,0.067s,PASSED
+pages.Search_Page.switchToWindow(),Firefox 68.0,,,2019-10-09 08:03:37,2019-10-09 08:03:38,0.740s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/ELECTRONIC_CHECK""), ""Credit card"", [mediumWait])",Firefox 68.0,,,2019-10-09 08:03:38,2019-10-09 08:03:41,2.985s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, VISA, checkingAccNum)",Firefox 68.0,,,2019-10-09 08:03:41,2019-10-09 08:03:42,1.524s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:42,2019-10-09 08:03:46,3.122s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Firefox 68.0,,,2019-10-09 08:03:46,2019-10-09 08:03:46,0.186s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:46,2019-10-09 08:03:46,0.724s,PASSED
+delay(mediumWait),Firefox 68.0,,,2019-10-09 08:03:46,2019-10-09 08:03:51,5.005s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 30)",Firefox 68.0,,,2019-10-09 08:03:51,2019-10-09 08:03:52,0.156s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:52,2019-10-09 08:03:53,0.921s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:53,2019-10-09 08:03:53,0.694s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Firefox 68.0,,,2019-10-09 08:03:53,2019-10-09 08:03:54,0.826s,PASSED
+closeBrowser(),Firefox 68.0,,,2019-10-09 08:03:54,2019-10-09 08:03:56,1.680s,PASSED
+Start tear down : tearDownTestCase,Firefox 68.0,,,2019-10-09 08:03:56,2019-10-09 08:03:56,0.000s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-09 08:03:56,2019-10-09 08:03:56,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 68.0,,,2019-10-09 08:03:56,2019-10-09 08:03:56,0.000s,PASSED

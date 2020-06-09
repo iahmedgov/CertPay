@@ -1,0 +1,612 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Certpay_Quicksti,Chrome 76.0.3809.100,,,2019-10-21 05:51:26,2019-10-21 06:13:06,21m - 39.595s,INCOMPLETE
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_001_Visa_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 05:51:28,2019-10-21 05:53:35,2m - 7.316s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:51:30,2019-10-21 05:51:31,0.700s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:51:31,2019-10-21 05:51:33,2.314s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay Quicksti application,,2019-10-21 05:51:35,2019-10-21 05:52:02,27.000s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/BUREAU_CODE""), bureau_code, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Bureau code',,2019-10-21 05:52:02,2019-10-21 05:52:16,13.844s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 05:52:16,2019-10-21 05:52:20,4.128s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 05:52:20,2019-10-21 05:52:24,3.621s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100, Click on 'Click here to manually enter card details',,2019-10-21 05:52:24,2019-10-21 05:52:26,2.324s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, VISA)",Chrome 76.0.3809.100,"Enter firstname,lastname,card number",,2019-10-21 05:52:26,2019-10-21 05:52:29,3.272s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_TYPE""), ""Taxes"", ""paymentType"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-21 05:52:29,2019-10-21 05:52:31,1.843s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"ENter exp date,security code",,2019-10-21 05:52:31,2019-10-21 05:52:38,6.723s,PASSED
+"pages.Quicksti.setPaymentAmountDetailsForSinglePayment(paymentAmount, quantity)",Chrome 76.0.3809.100,"Enter paymnet amount, quantity",,2019-10-21 05:52:38,2019-10-21 05:52:42,3.740s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/REFRENCE_NUMBER""), referenceNum, ""Reference Number"", [pageLoadTime])",Chrome 76.0.3809.100,Enter reference num,,2019-10-21 05:52:42,2019-10-21 05:52:43,1.176s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 05:52:43,2019-10-21 05:52:43,0.450s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/COMMENTS""), ""Testing"", ""Comments"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Comments,,2019-10-21 05:52:43,2019-10-21 05:52:44,1.076s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter address,,2019-10-21 05:52:44,2019-10-21 05:52:45,1.109s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 05:52:45,2019-10-21 05:52:50,4.180s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 05:52:50,2019-10-21 05:52:53,2.948s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 05:52:53,2019-10-21 05:52:56,3.959s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 05:52:56,2019-10-21 05:52:58,1.739s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,Verify user details,,2019-10-21 05:52:58,2019-10-21 05:52:59,0.453s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 05:52:59,2019-10-21 05:53:01,2.010s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 05:53:01,2019-10-21 05:53:01,0.144s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,"Click on 'Process'
+",,2019-10-21 05:53:01,2019-10-21 05:53:03,2.075s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,,,2019-10-21 05:53:03,2019-10-21 05:53:06,2.715s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Open reports site,,2019-10-21 05:53:06,2019-10-21 05:53:07,0.905s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100,"Enter username,password, access code",,2019-10-21 05:53:07,2019-10-21 05:53:14,7.019s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on reporting,,2019-10-21 05:53:14,2019-10-21 05:53:15,1.348s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 05:53:15,2019-10-21 05:53:17,1.731s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick find payment,,2019-10-21 05:53:17,2019-10-21 05:53:20,3.430s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 05:53:20,2019-10-21 05:53:22,1.852s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on serch button,,2019-10-21 05:53:22,2019-10-21 05:53:24,2.105s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Visa"", amount_Value)",Chrome 76.0.3809.100,Verify payment details,,2019-10-21 05:53:24,2019-10-21 05:53:25,1.282s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:53:25,2019-10-21 05:53:25,0.001s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:53:25,2019-10-21 05:53:35,10.171s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_001_Visa_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 05:53:36,2019-10-21 05:54:59,1m - 23.414s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:53:36,2019-10-21 05:53:36,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:53:36,2019-10-21 05:53:36,0.001s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay Quicksti application,,2019-10-21 05:53:36,2019-10-21 05:53:50,14.115s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/BUREAU_CODE""), bureau_code, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Bureau code',,2019-10-21 05:53:50,2019-10-21 05:53:52,1.967s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 05:53:52,2019-10-21 05:53:54,1.969s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 05:53:54,2019-10-21 05:53:56,1.855s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100, Click on 'Click here to manually enter card details',,2019-10-21 05:53:56,2019-10-21 05:53:59,2.368s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, VISA)",Chrome 76.0.3809.100,"Enter firstname,lastname,card number",,2019-10-21 05:53:59,2019-10-21 05:54:03,4.807s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_TYPE""), ""Taxes"", ""paymentType"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-21 05:54:03,2019-10-21 05:54:05,1.777s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"ENter exp date,security code",,2019-10-21 05:54:05,2019-10-21 05:54:10,4.684s,PASSED
+"pages.Quicksti.setPaymentAmountDetailsForSinglePayment(paymentAmount, quantity)",Chrome 76.0.3809.100,"Enter paymnet amount, quantity",,2019-10-21 05:54:10,2019-10-21 05:54:12,1.996s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/REFRENCE_NUMBER""), referenceNum, ""Reference Number"", [pageLoadTime])",Chrome 76.0.3809.100,Enter reference num,,2019-10-21 05:54:12,2019-10-21 05:54:13,1.051s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 05:54:13,2019-10-21 05:54:13,0.161s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/COMMENTS""), ""Testing"", ""Comments"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Comments,,2019-10-21 05:54:13,2019-10-21 05:54:16,2.430s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter address,,2019-10-21 05:54:16,2019-10-21 05:54:17,1.267s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 05:54:17,2019-10-21 05:54:19,1.713s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 05:54:19,2019-10-21 05:54:21,2.128s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 05:54:21,2019-10-21 05:54:22,1.311s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 05:54:22,2019-10-21 05:54:25,2.915s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,Verify user details,,2019-10-21 05:54:25,2019-10-21 05:54:28,3.461s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 05:54:28,2019-10-21 05:54:30,2.004s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 05:54:30,2019-10-21 05:54:32,1.158s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,"Click on 'Process'
+",,2019-10-21 05:54:32,2019-10-21 05:54:34,2.921s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,,,2019-10-21 05:54:34,2019-10-21 05:54:37,2.779s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Open reports site,,2019-10-21 05:54:37,2019-10-21 05:54:38,0.725s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100,"Enter username,password, access code",,2019-10-21 05:54:38,2019-10-21 05:54:43,4.670s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on reporting,,2019-10-21 05:54:43,2019-10-21 05:54:44,0.976s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 05:54:44,2019-10-21 05:54:45,1.220s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick find payment,,2019-10-21 05:54:45,2019-10-21 05:54:47,1.974s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 05:54:47,2019-10-21 05:54:48,1.396s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on serch button,,2019-10-21 05:54:48,2019-10-21 05:54:51,2.685s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Visa"", amount_Value)",Chrome 76.0.3809.100,Verify payment details,,2019-10-21 05:54:51,2019-10-21 05:54:54,3.252s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:54:54,2019-10-21 05:54:54,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:54:54,2019-10-21 05:54:59,4.806s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_002_Visa_MultiLinePayment,Chrome 76.0.3809.100,,,2019-10-21 05:54:59,2019-10-21 05:56:41,1m - 42.268s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:54:59,2019-10-21 05:54:59,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:54:59,2019-10-21 05:54:59,0.000s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 05:55:00,2019-10-21 05:55:15,14.287s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 05:55:15,2019-10-21 05:55:17,2.550s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 05:55:17,2019-10-21 05:55:19,1.476s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 05:55:19,2019-10-21 05:55:20,1.918s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 05:55:20,2019-10-21 05:55:22,1.075s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 05:55:22,2019-10-21 05:55:23,1.222s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 05:55:23,2019-10-21 05:55:26,3.487s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS_2""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 05:55:26,2019-10-21 05:55:28,1.285s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount2, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 05:55:28,2019-10-21 05:55:29,1.056s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", paymentType, ""0"", referenceNum2, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 05:55:29,2019-10-21 05:55:32,3.160s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 05:55:32,2019-10-21 05:55:32,0.113s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 05:55:32,2019-10-21 05:55:34,1.914s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, VISA)",Chrome 76.0.3809.100," Enter firstname,lastname, Visa card number",,2019-10-21 05:55:34,2019-10-21 05:55:37,3.411s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 05:55:37,2019-10-21 05:55:45,7.457s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter address,,2019-10-21 05:55:45,2019-10-21 05:55:46,1.023s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 05:55:46,2019-10-21 05:55:47,1.628s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 05:55:47,2019-10-21 05:55:49,1.259s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,enter email address,,2019-10-21 05:55:49,2019-10-21 05:55:52,3.130s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 05:55:52,2019-10-21 05:55:54,2.705s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify user details like first name ,last name",,2019-10-21 05:55:54,2019-10-21 05:55:55,0.740s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 05:55:55,2019-10-21 05:55:57,2.003s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 05:55:57,2019-10-21 05:55:57,0.110s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 05:55:57,2019-10-21 05:56:03,5.290s,PASSED
+"PaymentID = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval,,2019-10-21 05:56:03,2019-10-21 05:56:05,2.255s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 05:56:05,2019-10-21 05:56:06,0.861s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100,"Enter username,password,access code and click Login",,2019-10-21 05:56:06,2019-10-21 05:56:23,17.198s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click Reporting,,2019-10-21 05:56:23,2019-10-21 05:56:25,1.691s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 05:56:25,2019-10-21 05:56:27,2.077s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick find Payment,,2019-10-21 05:56:27,2019-10-21 05:56:33,6.481s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentID, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter payment id,,2019-10-21 05:56:33,2019-10-21 05:56:37,3.840s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Search,,2019-10-21 05:56:37,2019-10-21 05:56:38,1.188s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentID, ""Visa"", amount_Value)",Chrome 76.0.3809.100,"Verify Payment id,amount,card type",,2019-10-21 05:56:38,2019-10-21 05:56:39,0.577s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:56:39,2019-10-21 05:56:39,0.001s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:56:39,2019-10-21 05:56:41,2.542s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_002_Visa_MultiLinePayment,Chrome 76.0.3809.100,,,2019-10-21 05:56:41,2019-10-21 05:58:23,1m - 41.166s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:56:42,2019-10-21 05:56:42,0.001s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:56:42,2019-10-21 05:56:42,0.000s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 05:56:42,2019-10-21 05:56:55,12.686s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 05:56:55,2019-10-21 05:56:58,2.706s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 05:56:58,2019-10-21 05:57:01,3.975s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 05:57:01,2019-10-21 05:57:07,5.387s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 05:57:07,2019-10-21 05:57:09,1.685s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 05:57:09,2019-10-21 05:57:10,1.726s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 05:57:10,2019-10-21 05:57:15,4.401s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS_2""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 05:57:15,2019-10-21 05:57:16,1.571s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount2, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 05:57:16,2019-10-21 05:57:17,1.238s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", paymentType, ""0"", referenceNum2, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 05:57:17,2019-10-21 05:57:21,3.184s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 05:57:21,2019-10-21 05:57:21,0.145s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 05:57:21,2019-10-21 05:57:22,1.390s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, VISA)",Chrome 76.0.3809.100," Enter firstname,lastname, Visa card number",,2019-10-21 05:57:22,2019-10-21 05:57:32,9.784s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 05:57:32,2019-10-21 05:57:38,6.171s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter address,,2019-10-21 05:57:38,2019-10-21 05:57:40,1.900s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 05:57:40,2019-10-21 05:57:41,1.229s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 05:57:41,2019-10-21 05:57:43,1.391s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,enter email address,,2019-10-21 05:57:43,2019-10-21 05:57:44,1.174s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 05:57:44,2019-10-21 05:57:45,1.184s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify user details like first name ,last name",,2019-10-21 05:57:45,2019-10-21 05:57:45,0.367s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 05:57:45,2019-10-21 05:57:47,2.005s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 05:57:47,2019-10-21 05:57:48,0.492s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 05:57:48,2019-10-21 05:57:51,2.825s,PASSED
+"PaymentID = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval,,2019-10-21 05:57:51,2019-10-21 05:57:53,2.571s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 05:57:53,2019-10-21 05:57:55,1.431s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100,"Enter username,password,access code and click Login",,2019-10-21 05:57:55,2019-10-21 05:58:06,10.966s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click Reporting,,2019-10-21 05:58:06,2019-10-21 05:58:07,1.418s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 05:58:07,2019-10-21 05:58:08,0.986s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick find Payment,,2019-10-21 05:58:08,2019-10-21 05:58:09,1.277s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentID, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter payment id,,2019-10-21 05:58:09,2019-10-21 05:58:14,5.052s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Search,,2019-10-21 05:58:14,2019-10-21 05:58:19,4.973s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentID, ""Visa"", amount_Value)",Chrome 76.0.3809.100,"Verify Payment id,amount,card type",,2019-10-21 05:58:19,2019-10-21 05:58:20,0.562s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:58:20,2019-10-21 05:58:20,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:58:20,2019-10-21 05:58:23,2.556s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_003_MC_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 05:58:23,2019-10-21 06:00:09,1m - 46.690s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:58:23,2019-10-21 05:58:23,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:58:23,2019-10-21 05:58:23,0.001s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 05:58:24,2019-10-21 05:58:40,16.350s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/BUREAU_CODE""), bureau_code, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Bureau code',,2019-10-21 05:58:40,2019-10-21 05:58:43,2.455s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Teller Id',,2019-10-21 05:58:43,2019-10-21 05:58:44,1.447s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 05:58:44,2019-10-21 05:58:47,3.296s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 05:58:47,2019-10-21 05:58:49,1.893s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, MasterCard)",Chrome 76.0.3809.100," Enter firstname,lastname,MC card number",,2019-10-21 05:58:49,2019-10-21 05:58:55,5.372s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 05:58:55,2019-10-21 05:59:05,10.162s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_TYPE""), ""Gifts"", ""paymentType"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-21 05:59:05,2019-10-21 05:59:08,3.239s,PASSED
+"pages.Quicksti.setPaymentAmountDetailsForSinglePayment(paymentAmount, quantity)",Chrome 76.0.3809.100,"Enter payment amount,quantity",,2019-10-21 05:59:08,2019-10-21 05:59:11,2.712s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/REFRENCE_NUMBER""), referenceNum, ""Reference Num"", [pageLoadTime])",Chrome 76.0.3809.100,Enter reference num,,2019-10-21 05:59:11,2019-10-21 05:59:13,1.785s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 05:59:13,2019-10-21 05:59:13,0.231s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/COMMENTS""), ""Testing"", ""Comments"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Comments,,2019-10-21 05:59:13,2019-10-21 05:59:14,1.129s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Address,,2019-10-21 05:59:14,2019-10-21 05:59:16,2.250s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 05:59:16,2019-10-21 05:59:18,1.381s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 05:59:18,2019-10-21 05:59:21,3.089s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 05:59:21,2019-10-21 05:59:22,1.206s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 05:59:22,2019-10-21 05:59:24,1.982s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,Verify user details,,2019-10-21 05:59:24,2019-10-21 05:59:25,0.688s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 05:59:25,2019-10-21 05:59:27,2.002s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 05:59:27,2019-10-21 05:59:27,0.630s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process',,2019-10-21 05:59:27,2019-10-21 05:59:30,3.299s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,,,2019-10-21 05:59:30,2019-10-21 05:59:33,2.570s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 05:59:33,2019-10-21 05:59:35,1.678s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100," Enter username,password,access code and click Login",,2019-10-21 05:59:35,2019-10-21 05:59:47,12.594s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 05:59:47,2019-10-21 05:59:50,2.283s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 05:59:50,2019-10-21 05:59:51,1.594s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,CLick on Quick find Payment,,2019-10-21 05:59:51,2019-10-21 05:59:53,1.499s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 05:59:53,2019-10-21 05:59:55,2.273s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click Search,,2019-10-21 05:59:55,2019-10-21 05:59:58,3.196s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Master Card"", amount_Value)",Chrome 76.0.3809.100,"Verify card type,payment amount,id",,2019-10-21 05:59:58,2019-10-21 05:59:59,0.419s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:59:59,2019-10-21 05:59:59,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 05:59:59,2019-10-21 06:00:09,10.672s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_003_MC_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 06:00:09,2019-10-21 06:01:21,1m - 12.211s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:00:10,2019-10-21 06:00:10,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:00:10,2019-10-21 06:00:10,0.000s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 06:00:10,2019-10-21 06:00:24,13.834s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/BUREAU_CODE""), bureau_code, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Bureau code',,2019-10-21 06:00:24,2019-10-21 06:00:25,1.050s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Teller Id',,2019-10-21 06:00:25,2019-10-21 06:00:26,0.797s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:00:26,2019-10-21 06:00:27,1.645s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:00:27,2019-10-21 06:00:29,1.549s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, MasterCard)",Chrome 76.0.3809.100," Enter firstname,lastname,MC card number",,2019-10-21 06:00:29,2019-10-21 06:00:33,3.966s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:00:33,2019-10-21 06:00:37,3.872s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_TYPE""), ""Gifts"", ""paymentType"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-21 06:00:37,2019-10-21 06:00:38,1.484s,PASSED
+"pages.Quicksti.setPaymentAmountDetailsForSinglePayment(paymentAmount, quantity)",Chrome 76.0.3809.100,"Enter payment amount,quantity",,2019-10-21 06:00:38,2019-10-21 06:00:41,3.007s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/REFRENCE_NUMBER""), referenceNum, ""Reference Num"", [pageLoadTime])",Chrome 76.0.3809.100,Enter reference num,,2019-10-21 06:00:41,2019-10-21 06:00:42,1.081s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:00:42,2019-10-21 06:00:42,0.132s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/COMMENTS""), ""Testing"", ""Comments"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Comments,,2019-10-21 06:00:42,2019-10-21 06:00:48,6.127s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Address,,2019-10-21 06:00:48,2019-10-21 06:00:50,1.627s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:00:50,2019-10-21 06:00:51,1.124s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 06:00:51,2019-10-21 06:00:54,2.441s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 06:00:54,2019-10-21 06:00:56,2.746s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:00:56,2019-10-21 06:00:58,1.852s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,Verify user details,,2019-10-21 06:00:58,2019-10-21 06:00:59,0.847s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 06:00:59,2019-10-21 06:01:01,2.002s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:01:01,2019-10-21 06:01:01,0.150s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process',,2019-10-21 06:01:01,2019-10-21 06:01:05,3.275s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,,,2019-10-21 06:01:05,2019-10-21 06:01:07,2.449s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:01:07,2019-10-21 06:01:08,0.795s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100," Enter username,password,access code and click Login",,2019-10-21 06:01:08,2019-10-21 06:01:13,5.196s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 06:01:13,2019-10-21 06:01:14,0.975s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:01:14,2019-10-21 06:01:15,0.953s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,CLick on Quick find Payment,,2019-10-21 06:01:15,2019-10-21 06:01:16,1.268s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 06:01:16,2019-10-21 06:01:17,0.910s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click Search,,2019-10-21 06:01:17,2019-10-21 06:01:18,1.071s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Master Card"", amount_Value)",Chrome 76.0.3809.100,"Verify card type,payment amount,id",,2019-10-21 06:01:18,2019-10-21 06:01:19,0.648s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:01:19,2019-10-21 06:01:19,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:01:19,2019-10-21 06:01:21,2.699s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_004_MC_MultiLInePayment,Chrome 76.0.3809.100,,,2019-10-21 06:01:22,2019-10-21 06:02:42,1m - 20.948s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:01:22,2019-10-21 06:01:22,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:01:22,2019-10-21 06:01:22,0.002s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 06:01:22,2019-10-21 06:01:34,11.588s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 06:01:34,2019-10-21 06:01:36,1.825s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 06:01:36,2019-10-21 06:01:37,0.983s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:01:37,2019-10-21 06:01:39,1.875s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:01:39,2019-10-21 06:01:40,1.613s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:01:40,2019-10-21 06:01:42,1.800s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 06:01:42,2019-10-21 06:01:45,3.291s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS_2""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:01:45,2019-10-21 06:01:47,1.385s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount2, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:01:47,2019-10-21 06:01:48,1.478s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 06:01:48,2019-10-21 06:01:55,6.769s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:01:55,2019-10-21 06:01:55,0.197s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:01:55,2019-10-21 06:01:58,2.860s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, MasterCard)",Chrome 76.0.3809.100," Enter firstname,lastname,MC card number",,2019-10-21 06:01:58,2019-10-21 06:02:04,6.224s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:02:04,2019-10-21 06:02:08,3.521s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,"Enter address
+",,2019-10-21 06:02:08,2019-10-21 06:02:09,1.032s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:02:09,2019-10-21 06:02:10,1.607s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,enter telephone,,2019-10-21 06:02:10,2019-10-21 06:02:12,1.697s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter EMail address,,2019-10-21 06:02:12,2019-10-21 06:02:14,1.969s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 06:02:14,2019-10-21 06:02:17,3.042s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify user details like first name ,last name",,2019-10-21 06:02:17,2019-10-21 06:02:18,1.233s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:02:18,2019-10-21 06:02:19,0.242s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 06:02:19,2019-10-21 06:02:22,3.017s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval,,2019-10-21 06:02:22,2019-10-21 06:02:26,4.132s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:02:26,2019-10-21 06:02:27,1.397s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100,"Enter username,password,access code and click Login",,2019-10-21 06:02:27,2019-10-21 06:02:34,6.645s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click Reporting,,2019-10-21 06:02:34,2019-10-21 06:02:35,1.499s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:02:35,2019-10-21 06:02:36,1.008s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick find Payment,,2019-10-21 06:02:36,2019-10-21 06:02:38,1.574s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 06:02:38,2019-10-21 06:02:39,1.503s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on serach,,2019-10-21 06:02:39,2019-10-21 06:02:41,1.164s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Master Card"", amount_Value)",Chrome 76.0.3809.100,"Verify Payment id,amount,card type",,2019-10-21 06:02:41,2019-10-21 06:02:41,0.413s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:02:41,2019-10-21 06:02:41,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:02:41,2019-10-21 06:02:42,1.523s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_004_MC_MultiLInePayment,Chrome 76.0.3809.100,,,2019-10-21 06:02:43,2019-10-21 06:05:04,2m - 21.568s,FAILED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:02:43,2019-10-21 06:02:43,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:02:43,2019-10-21 06:02:43,0.001s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 06:02:43,2019-10-21 06:02:56,13.363s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 06:02:56,2019-10-21 06:02:58,1.620s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 06:02:58,2019-10-21 06:02:59,0.870s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:02:59,2019-10-21 06:03:00,1.627s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:03:00,2019-10-21 06:03:02,1.758s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:03:02,2019-10-21 06:03:03,1.093s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 06:03:03,2019-10-21 06:03:07,4.275s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS_2""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:03:07,2019-10-21 06:03:09,1.129s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount2, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:03:09,2019-10-21 06:03:10,1.840s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 06:03:10,2019-10-21 06:03:14,3.731s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:03:14,2019-10-21 06:03:14,0.245s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:03:14,2019-10-21 06:03:16,1.359s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, MasterCard)",Chrome 76.0.3809.100," Enter firstname,lastname,MC card number",,2019-10-21 06:03:16,2019-10-21 06:03:19,2.855s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:03:19,2019-10-21 06:03:23,3.971s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,"Enter address
+",,2019-10-21 06:03:23,2019-10-21 06:03:23,0.800s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:03:23,2019-10-21 06:03:24,1.076s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,enter telephone,,2019-10-21 06:03:24,2019-10-21 06:03:26,1.549s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter EMail address,,2019-10-21 06:03:26,2019-10-21 06:03:27,0.992s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 06:03:27,2019-10-21 06:03:28,1.297s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify user details like first name ,last name",,2019-10-21 06:03:28,2019-10-21 06:03:29,0.718s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:03:29,2019-10-21 06:03:29,0.152s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 06:03:29,2019-10-21 06:03:32,2.921s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval,,2019-10-21 06:03:32,2019-10-21 06:03:35,2.486s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:03:35,2019-10-21 06:03:35,0.792s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100,"Enter username,password,access code and click Login",,2019-10-21 06:03:35,2019-10-21 06:03:40,4.973s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click Reporting,,2019-10-21 06:03:40,2019-10-21 06:03:41,1.088s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:03:41,2019-10-21 06:03:42,0.899s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick find Payment,,2019-10-21 06:03:42,2019-10-21 06:03:46,3.759s,FAILED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 06:03:46,2019-10-21 06:05:01,1m - 14.423s,FAILED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:05:01,2019-10-21 06:05:01,0.003s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:05:01,2019-10-21 06:05:04,3.523s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_005_Discover_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 06:05:04,2019-10-21 06:06:11,1m - 7.135s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:05:04,2019-10-21 06:05:04,0.001s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:05:04,2019-10-21 06:05:05,0.008s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 06:05:05,2019-10-21 06:05:18,12.826s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/BUREAU_CODE""), bureau_code, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Bureau code',,2019-10-21 06:05:18,2019-10-21 06:05:22,3.406s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Teller Id',,2019-10-21 06:05:22,2019-10-21 06:05:23,0.907s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:05:23,2019-10-21 06:05:25,1.975s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:05:25,2019-10-21 06:05:26,1.710s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, DiscoverCard)",Chrome 76.0.3809.100," Enter firstname,lastname, Discover card Number",,2019-10-21 06:05:26,2019-10-21 06:05:30,3.386s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:05:30,2019-10-21 06:05:34,4.109s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_TYPE""), ""Taxes"", ""paymentType"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-21 06:05:34,2019-10-21 06:05:35,1.326s,PASSED
+"pages.Quicksti.setPaymentAmountDetailsForSinglePayment(paymentAmount, quantity)",Chrome 76.0.3809.100,"Enter payment amount,quantity",,2019-10-21 06:05:35,2019-10-21 06:05:38,2.408s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/REFRENCE_NUMBER""), referenceNum, ""Reference Number"", [pageLoadTime])",Chrome 76.0.3809.100,Enter reference num,,2019-10-21 06:05:38,2019-10-21 06:05:38,0.836s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:05:38,2019-10-21 06:05:38,0.114s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/COMMENTS""), ""Testing"", ""Comments"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Comments,,2019-10-21 06:05:38,2019-10-21 06:05:40,1.139s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Address,,2019-10-21 06:05:40,2019-10-21 06:05:41,0.914s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:05:41,2019-10-21 06:05:42,1.405s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 06:05:42,2019-10-21 06:05:43,0.980s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 06:05:43,2019-10-21 06:05:44,1.085s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:05:44,2019-10-21 06:05:45,1.277s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,Verify user details,,2019-10-21 06:05:45,2019-10-21 06:05:46,0.390s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 06:05:46,2019-10-21 06:05:48,2.002s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:05:48,2019-10-21 06:05:48,0.157s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process',,2019-10-21 06:05:48,2019-10-21 06:05:50,2.074s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,,,2019-10-21 06:05:50,2019-10-21 06:05:53,2.674s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:05:53,2019-10-21 06:05:54,1.248s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100," Enter username,password,access code and click Login",,2019-10-21 06:05:54,2019-10-21 06:05:58,4.570s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 06:05:58,2019-10-21 06:06:00,1.463s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:06:00,2019-10-21 06:06:01,1.035s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,CLick on Quick find Payment,,2019-10-21 06:06:01,2019-10-21 06:06:03,2.332s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter payment id,,2019-10-21 06:06:03,2019-10-21 06:06:05,1.202s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on search button,,2019-10-21 06:06:05,2019-10-21 06:06:06,1.416s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Discover"", amount_Value)",Chrome 76.0.3809.100,"Verify card type,payment amount,id",,2019-10-21 06:06:06,2019-10-21 06:06:06,0.441s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:06:06,2019-10-21 06:06:06,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:06:06,2019-10-21 06:06:11,4.896s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_005_Discover_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 06:06:11,2019-10-21 06:07:12,1m - 1.099s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:06:11,2019-10-21 06:06:11,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:06:11,2019-10-21 06:06:11,0.002s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 06:06:11,2019-10-21 06:06:24,12.998s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/BUREAU_CODE""), bureau_code, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Bureau code',,2019-10-21 06:06:24,2019-10-21 06:06:26,1.245s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Teller Id',,2019-10-21 06:06:26,2019-10-21 06:06:27,1.176s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:06:27,2019-10-21 06:06:29,2.380s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:06:29,2019-10-21 06:06:31,1.957s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, DiscoverCard)",Chrome 76.0.3809.100," Enter firstname,lastname, Discover card Number",,2019-10-21 06:06:31,2019-10-21 06:06:35,3.409s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:06:35,2019-10-21 06:06:38,3.176s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_TYPE""), ""Taxes"", ""paymentType"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-21 06:06:38,2019-10-21 06:06:39,1.020s,PASSED
+"pages.Quicksti.setPaymentAmountDetailsForSinglePayment(paymentAmount, quantity)",Chrome 76.0.3809.100,"Enter payment amount,quantity",,2019-10-21 06:06:39,2019-10-21 06:06:41,2.246s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/REFRENCE_NUMBER""), referenceNum, ""Reference Number"", [pageLoadTime])",Chrome 76.0.3809.100,Enter reference num,,2019-10-21 06:06:41,2019-10-21 06:06:42,0.813s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:06:42,2019-10-21 06:06:42,0.129s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/COMMENTS""), ""Testing"", ""Comments"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Comments,,2019-10-21 06:06:42,2019-10-21 06:06:43,0.937s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Address,,2019-10-21 06:06:43,2019-10-21 06:06:44,0.997s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:06:44,2019-10-21 06:06:45,1.254s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 06:06:45,2019-10-21 06:06:46,0.986s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 06:06:46,2019-10-21 06:06:47,0.948s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:06:47,2019-10-21 06:06:49,1.400s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,Verify user details,,2019-10-21 06:06:49,2019-10-21 06:06:49,0.373s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 06:06:49,2019-10-21 06:06:51,2.002s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:06:51,2019-10-21 06:06:51,0.455s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process',,2019-10-21 06:06:51,2019-10-21 06:06:53,1.602s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,,,2019-10-21 06:06:53,2019-10-21 06:06:55,2.257s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:06:55,2019-10-21 06:06:56,1.106s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100," Enter username,password,access code and click Login",,2019-10-21 06:06:56,2019-10-21 06:07:02,5.329s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 06:07:02,2019-10-21 06:07:03,0.916s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:07:03,2019-10-21 06:07:03,0.806s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,CLick on Quick find Payment,,2019-10-21 06:07:03,2019-10-21 06:07:05,1.372s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter payment id,,2019-10-21 06:07:05,2019-10-21 06:07:06,1.085s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on search button,,2019-10-21 06:07:06,2019-10-21 06:07:10,3.801s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Discover"", amount_Value)",Chrome 76.0.3809.100,"Verify card type,payment amount,id",,2019-10-21 06:07:10,2019-10-21 06:07:10,0.824s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:07:10,2019-10-21 06:07:10,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:07:10,2019-10-21 06:07:12,1.909s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_006_Discover_MultiLInePayment,Chrome 76.0.3809.100,,,2019-10-21 06:07:12,2019-10-21 06:08:06,53.252s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:07:13,2019-10-21 06:07:13,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:07:13,2019-10-21 06:07:13,0.000s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 06:07:14,2019-10-21 06:07:25,10.913s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 06:07:25,2019-10-21 06:07:27,2.027s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 06:07:27,2019-10-21 06:07:28,0.882s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:07:28,2019-10-21 06:07:29,1.501s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:07:29,2019-10-21 06:07:30,1.024s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:07:30,2019-10-21 06:07:31,1.092s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 06:07:31,2019-10-21 06:07:34,2.425s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS_2""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:07:34,2019-10-21 06:07:35,0.978s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount2, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:07:35,2019-10-21 06:07:36,0.944s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", paymentType, ""0"", referenceNum2, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 06:07:36,2019-10-21 06:07:38,2.557s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:07:38,2019-10-21 06:07:38,0.096s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:07:38,2019-10-21 06:07:40,1.345s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, DiscoverCard)",Chrome 76.0.3809.100," Enter firstname,lastname,Discover card Number",,2019-10-21 06:07:40,2019-10-21 06:07:43,2.827s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:07:43,2019-10-21 06:07:45,2.687s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,"Enter address
+",,2019-10-21 06:07:45,2019-10-21 06:07:46,1.038s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:07:46,2019-10-21 06:07:47,0.920s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 06:07:47,2019-10-21 06:07:48,0.925s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,"Enter email address
+",,2019-10-21 06:07:48,2019-10-21 06:07:49,0.990s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 06:07:49,2019-10-21 06:07:50,1.068s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify user details like first name ,last name",,2019-10-21 06:07:50,2019-10-21 06:07:51,0.349s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:07:51,2019-10-21 06:07:51,0.118s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 06:07:51,2019-10-21 06:07:52,1.649s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval,,2019-10-21 06:07:52,2019-10-21 06:07:55,2.265s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:07:55,2019-10-21 06:07:55,0.557s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100,"Enter username,password,access code and click Login",,2019-10-21 06:07:55,2019-10-21 06:07:59,3.714s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click Reporting,,2019-10-21 06:07:59,2019-10-21 06:08:00,0.986s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:08:00,2019-10-21 06:08:01,0.775s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick find Payment,,2019-10-21 06:08:01,2019-10-21 06:08:02,1.111s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 06:08:02,2019-10-21 06:08:03,0.877s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Search,,2019-10-21 06:08:03,2019-10-21 06:08:04,1.080s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Discover"", amount_Value)",Chrome 76.0.3809.100,"Verify Payment id,amount,card type",,2019-10-21 06:08:04,2019-10-21 06:08:04,0.307s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:08:04,2019-10-21 06:08:04,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:08:04,2019-10-21 06:08:06,1.560s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_007_Amex_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 06:08:06,2019-10-21 06:08:58,51.957s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:08:06,2019-10-21 06:08:06,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:08:06,2019-10-21 06:08:06,0.001s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 06:08:07,2019-10-21 06:08:18,11.350s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/BUREAU_CODE""), bureau_code, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Bureau code',,2019-10-21 06:08:18,2019-10-21 06:08:19,1.478s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100, Enter 'Teller Id',,2019-10-21 06:08:19,2019-10-21 06:08:21,1.465s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:08:21,2019-10-21 06:08:23,1.547s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:08:23,2019-10-21 06:08:24,1.436s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, AMEX_Card)",Chrome 76.0.3809.100," Enter firstname,lastname,Amex card number",,2019-10-21 06:08:24,2019-10-21 06:08:27,3.076s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:08:27,2019-10-21 06:08:31,3.712s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_TYPE""), paymentType, ""paymentType"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-21 06:08:31,2019-10-21 06:08:33,2.105s,PASSED
+"pages.Quicksti.setPaymentAmountDetailsForSinglePayment(paymentAmount, quantity)",Chrome 76.0.3809.100,"Enter payment amount,quantity",,2019-10-21 06:08:33,2019-10-21 06:08:35,1.728s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/REFRENCE_NUMBER""), referenceNum, ""Reference Number"", [pageLoadTime])",Chrome 76.0.3809.100,Enter reference num,,2019-10-21 06:08:35,2019-10-21 06:08:35,0.752s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:08:35,2019-10-21 06:08:35,0.099s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/COMMENTS""), ""Testing"", ""Comments"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Comments,,2019-10-21 06:08:35,2019-10-21 06:08:36,0.855s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Address,,2019-10-21 06:08:36,2019-10-21 06:08:37,0.899s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Zip code,,2019-10-21 06:08:37,2019-10-21 06:08:38,0.822s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 06:08:38,2019-10-21 06:08:39,0.850s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 06:08:39,2019-10-21 06:08:40,0.996s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:08:40,2019-10-21 06:08:41,1.036s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,Verify payment details,,2019-10-21 06:08:41,2019-10-21 06:08:41,0.394s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 06:08:41,2019-10-21 06:08:43,2.001s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:08:43,2019-10-21 06:08:43,0.097s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process',,2019-10-21 06:08:43,2019-10-21 06:08:45,1.700s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,,,2019-10-21 06:08:45,2019-10-21 06:08:47,2.252s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:08:47,2019-10-21 06:08:48,0.544s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100," Enter username,password,access code",,2019-10-21 06:08:48,2019-10-21 06:08:51,3.561s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 06:08:51,2019-10-21 06:08:52,0.851s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:08:52,2019-10-21 06:08:53,0.772s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,CLick on Quick find Payment,,2019-10-21 06:08:53,2019-10-21 06:08:54,1.196s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter paymnet id,,2019-10-21 06:08:54,2019-10-21 06:08:55,0.891s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on search,,2019-10-21 06:08:55,2019-10-21 06:08:56,1.141s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""American Express"", amount_Value)",Chrome 76.0.3809.100,"Verify card type,payment amount,id",,2019-10-21 06:08:56,2019-10-21 06:08:57,0.330s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:08:57,2019-10-21 06:08:57,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:08:57,2019-10-21 06:08:58,1.018s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_008_Amex_MultiLinePayment,Chrome 76.0.3809.100,,,2019-10-21 06:08:58,2019-10-21 06:09:54,56.397s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:08:58,2019-10-21 06:08:58,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:08:58,2019-10-21 06:08:58,0.000s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100,Open certpay Quicksti appliction,,2019-10-21 06:08:58,2019-10-21 06:09:09,11.194s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 06:09:09,2019-10-21 06:09:11,2.082s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 06:09:11,2019-10-21 06:09:13,1.110s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:09:13,2019-10-21 06:09:15,2.161s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:09:15,2019-10-21 06:09:16,1.100s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:09:16,2019-10-21 06:09:17,1.037s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 06:09:17,2019-10-21 06:09:19,2.455s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS_2""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:09:19,2019-10-21 06:09:20,0.911s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount2, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:09:20,2019-10-21 06:09:21,0.840s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", paymentType, ""0"", referenceNum2, quantity)",Chrome 76.0.3809.100,"Enter payment type,reference num,quantity",,2019-10-21 06:09:21,2019-10-21 06:09:23,2.422s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:09:23,2019-10-21 06:09:24,0.103s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:09:24,2019-10-21 06:09:25,1.301s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, AMEX_Card)",Chrome 76.0.3809.100," Enter firstname,lastname,Amex card number",,2019-10-21 06:09:25,2019-10-21 06:09:27,2.539s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:09:27,2019-10-21 06:09:30,2.532s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,"Enter address
+",,2019-10-21 06:09:30,2019-10-21 06:09:31,0.777s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:09:31,2019-10-21 06:09:32,0.803s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 06:09:32,2019-10-21 06:09:32,0.881s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 06:09:32,2019-10-21 06:09:33,0.965s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 06:09:33,2019-10-21 06:09:35,1.162s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify user details like first name ,last name",,2019-10-21 06:09:35,2019-10-21 06:09:35,0.399s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:09:35,2019-10-21 06:09:35,0.092s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 06:09:35,2019-10-21 06:09:40,4.659s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval and note payment id,,2019-10-21 06:09:40,2019-10-21 06:09:42,2.219s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:09:42,2019-10-21 06:09:44,2.098s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100,"Enter username,password,access code and click Login",,2019-10-21 06:09:44,2019-10-21 06:09:48,3.624s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click Reporting,,2019-10-21 06:09:48,2019-10-21 06:09:49,0.916s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:09:49,2019-10-21 06:09:49,0.762s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick find Payment,,2019-10-21 06:09:49,2019-10-21 06:09:50,1.064s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter payment id,,2019-10-21 06:09:50,2019-10-21 06:09:51,0.887s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Search,,2019-10-21 06:09:51,2019-10-21 06:09:52,1.094s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""American Express"", amount_Value)",Chrome 76.0.3809.100,"Verify Payment id,amount,card type",,2019-10-21 06:09:52,2019-10-21 06:09:53,0.412s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:09:53,2019-10-21 06:09:53,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:09:53,2019-10-21 06:09:54,1.270s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_009_MultiBureauSite_MultiBureau_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 06:09:54,2019-10-21 06:10:47,52.964s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:09:54,2019-10-21 06:09:54,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:09:54,2019-10-21 06:09:54,0.000s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100, Open certpay Quicksti appliction,,2019-10-21 06:09:55,2019-10-21 06:10:06,11.151s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 06:10:06,2019-10-21 06:10:08,1.691s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 06:10:08,2019-10-21 06:10:09,0.818s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:10:09,2019-10-21 06:10:10,1.572s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:10:10,2019-10-21 06:10:12,1.376s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:10:12,2019-10-21 06:10:13,0.988s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:10:13,2019-10-21 06:10:15,2.625s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:10:15,2019-10-21 06:10:17,1.239s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,Store amount value,,2019-10-21 06:10:17,2019-10-21 06:10:17,0.157s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, VISA)",Chrome 76.0.3809.100,"Enter firstname,lastname,card number",,2019-10-21 06:10:17,2019-10-21 06:10:20,3.156s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:10:20,2019-10-21 06:10:23,3.256s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter address,,2019-10-21 06:10:23,2019-10-21 06:10:24,0.942s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:10:24,2019-10-21 06:10:25,1.073s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,Enter telephone,,2019-10-21 06:10:25,2019-10-21 06:10:26,1.023s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 06:10:26,2019-10-21 06:10:27,1.180s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 06:10:27,2019-10-21 06:10:28,1.165s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify details like first and last name,amount,card num",,2019-10-21 06:10:28,2019-10-21 06:10:29,0.431s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 06:10:29,2019-10-21 06:10:31,2.002s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:10:31,2019-10-21 06:10:31,0.105s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 06:10:31,2019-10-21 06:10:33,2.332s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval,,2019-10-21 06:10:33,2019-10-21 06:10:36,2.280s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:10:36,2019-10-21 06:10:36,0.661s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100," Enter username,password,access code and Click On Login",,2019-10-21 06:10:36,2019-10-21 06:10:40,4.119s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 06:10:40,2019-10-21 06:10:41,0.922s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:10:41,2019-10-21 06:10:42,0.817s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick Find Payment,,2019-10-21 06:10:42,2019-10-21 06:10:43,1.171s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 06:10:43,2019-10-21 06:10:44,0.860s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Search,,2019-10-21 06:10:44,2019-10-21 06:10:45,1.211s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Visa"", amount_Value)",Chrome 76.0.3809.100,"Verify payment id,amount,cardType",,2019-10-21 06:10:45,2019-10-21 06:10:46,0.379s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:10:46,2019-10-21 06:10:46,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:10:46,2019-10-21 06:10:47,1.197s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_010_MultiBureauSite_MultiBureaus_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-21 06:10:47,2019-10-21 06:11:44,56.926s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:10:47,2019-10-21 06:10:47,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:10:47,2019-10-21 06:10:47,0.016s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100, Open certpay Quicksti appliction,,2019-10-21 06:10:48,2019-10-21 06:10:59,11.672s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 06:10:59,2019-10-21 06:11:01,1.740s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 06:11:01,2019-10-21 06:11:02,1.072s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:11:02,2019-10-21 06:11:04,1.425s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Multi_Bureau_Page/COMMENTS""), comments, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:11:04,2019-10-21 06:11:05,0.892s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:11:05,2019-10-21 06:11:05,0.942s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:11:05,2019-10-21 06:11:08,2.426s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MULTIBUREAU_PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter paymnet amount,,2019-10-21 06:11:08,2019-10-21 06:11:09,0.879s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", ""Registration Fees"", ""1"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:11:09,2019-10-21 06:11:11,2.394s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MULTIBUREAU_PAY_AMOUNT2""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:11:11,2019-10-21 06:11:12,0.899s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", ""Vehicles"", ""2"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:11:12,2019-10-21 06:11:14,2.346s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:11:14,2019-10-21 06:11:16,1.229s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,Get amount value,,2019-10-21 06:11:16,2019-10-21 06:11:16,0.138s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, VISA)",Chrome 76.0.3809.100,"Enter firstname,lastname,card number",,2019-10-21 06:11:16,2019-10-21 06:11:18,2.598s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:11:18,2019-10-21 06:11:21,2.679s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:11:21,2019-10-21 06:11:22,0.812s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:11:22,2019-10-21 06:11:23,0.802s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:11:23,2019-10-21 06:11:24,0.984s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:11:24,2019-10-21 06:11:25,1.002s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 06:11:25,2019-10-21 06:11:26,1.193s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify details like first and last name,amount,card num",,2019-10-21 06:11:26,2019-10-21 06:11:26,0.327s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-10-21 06:11:26,2019-10-21 06:11:28,2.002s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 0)",Chrome 76.0.3809.100,,,2019-10-21 06:11:28,2019-10-21 06:11:28,0.123s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 06:11:28,2019-10-21 06:11:30,2.130s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval,,2019-10-21 06:11:30,2019-10-21 06:11:33,2.269s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:11:33,2019-10-21 06:11:34,1.208s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100," Enter username,password,access code and Click On Login",,2019-10-21 06:11:34,2019-10-21 06:11:38,3.638s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 06:11:38,2019-10-21 06:11:38,0.805s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 06:11:38,2019-10-21 06:11:39,0.861s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick Find Payment,,2019-10-21 06:11:39,2019-10-21 06:11:40,1.091s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 06:11:40,2019-10-21 06:11:41,0.899s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Search,,2019-10-21 06:11:41,2019-10-21 06:11:42,1.138s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""Visa"", amount_Value)",Chrome 76.0.3809.100,"Verify payment id,amount,cardType",,2019-10-21 06:11:42,2019-10-21 06:11:43,0.381s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:11:43,2019-10-21 06:11:43,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:11:43,2019-10-21 06:11:44,1.197s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_011_MultiBureauSite_MultiBureaus_MultiLinePayments,Chrome 76.0.3809.100,,,2019-10-21 06:11:44,2019-10-21 06:13:06,1m - 21.915s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:11:45,2019-10-21 06:11:45,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:11:45,2019-10-21 06:11:45,0.000s,PASSED
+"utilities.SafeActions.openBrowser(Quicksti_Url, [pageLoadTime])",Chrome 76.0.3809.100, Open certpay Quicksti appliction,,2019-10-21 06:11:45,2019-10-21 06:11:56,10.908s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/MULTI_BUREAU_CHECKBOX""), ""Multi Bureau"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Use multi bureau entry screen' checkbox,,2019-10-21 06:11:56,2019-10-21 06:11:58,1.870s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/TELLER_ID""), teller_id, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Teller Id',,2019-10-21 06:11:58,2019-10-21 06:11:59,0.834s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Login_ Page/NEXT_BUTTON""), ""Next button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Next',,2019-10-21 06:11:59,2019-10-21 06:12:00,1.509s,PASSED
+"pages.Quicksti.setCommnets(""0"", ""0"", ""tester"")",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:12:00,2019-10-21 06:12:01,1.024s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:12:01,2019-10-21 06:12:02,1.025s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:02,2019-10-21 06:12:05,2.575s,PASSED
+"pages.Quicksti.setCommnets(""0"", ""1"", ""tester"")",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:12:05,2019-10-21 06:12:06,0.807s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter paymnet amount,,2019-10-21 06:12:06,2019-10-21 06:12:07,1.039s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", ""Taxes"", ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:07,2019-10-21 06:12:09,2.488s,PASSED
+"pages.Quicksti.setCommnets(""0"", ""2"", ""tester"")",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:12:09,2019-10-21 06:12:10,0.850s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:12:10,2019-10-21 06:12:11,0.958s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""2"", paymentType, ""0"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:11,2019-10-21 06:12:14,2.582s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MULTIBUREAU_PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:12:14,2019-10-21 06:12:15,0.956s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", ""Registration Fees"", ""1"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:15,2019-10-21 06:12:17,2.347s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MULTIBUREAU_PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:12:17,2019-10-21 06:12:18,0.939s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", ""Registration Fees"", ""1"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:18,2019-10-21 06:12:21,2.703s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MULTIBUREAU_PAYMENT_AMOUNT""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:12:21,2019-10-21 06:12:22,1.095s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""2"", ""Registration Fees"", ""1"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:22,2019-10-21 06:12:24,2.476s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MULTIBUREAU_PAY_AMOUNT2""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:12:24,2019-10-21 06:12:25,1.029s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""0"", ""Vehicles"", ""2"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:25,2019-10-21 06:12:28,2.413s,PASSED
+"pages.Quicksti.setCommnets(""2"", ""0"", ""tester"")",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:12:28,2019-10-21 06:12:28,0.915s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MULTIBUREAU_PAY_AMOUNT2""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:12:28,2019-10-21 06:12:29,0.978s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""1"", ""Vehicles"", ""2"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:29,2019-10-21 06:12:32,2.437s,PASSED
+"pages.Quicksti.setCommnets(""2"", ""1"", ""tester"")",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:12:32,2019-10-21 06:12:33,0.921s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MULTIBUREAU_PAY_AMOUNT2""), paymentAmount, ""Payment Amount"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment amount,,2019-10-21 06:12:33,2019-10-21 06:12:34,1.027s,PASSED
+"pages.Quicksti.setAmountDetailsForMultiBureau(""2"", ""Vehicles"", ""2"", referenceNum, quantity)",Chrome 76.0.3809.100,"Enter paymnet type,reference Num,quantity",,2019-10-21 06:12:34,2019-10-21 06:12:36,2.558s,PASSED
+"pages.Quicksti.setCommnets(""2"", ""2"", ""tester"")",Chrome 76.0.3809.100,Enter comments,,2019-10-21 06:12:36,2019-10-21 06:12:37,0.855s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/MANUAL_ENTRY_BUTTON""), ""ManualEntry"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Click here to manually enter card details',,2019-10-21 06:12:37,2019-10-21 06:12:39,1.535s,PASSED
+"amount_Value = pages.Quicksti.getAttributeValue(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/SUB_TOTAL""))",Chrome 76.0.3809.100,,,2019-10-21 06:12:39,2019-10-21 06:12:39,0.146s,PASSED
+"CardNumber = pages.Quicksti.setUserPaymentDetails(firstName, lastName, AMEX_Card)",Chrome 76.0.3809.100,"Enter firstname,lastname,card number",,2019-10-21 06:12:39,2019-10-21 06:12:42,2.837s,PASSED
+"pages.Quicksti.setExpDate(expMonth, expYear, securityCode)",Chrome 76.0.3809.100,"Enter exp date,security code",,2019-10-21 06:12:42,2019-10-21 06:12:44,2.562s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ADDRESS""), address, ""Address"", [pageLoadTime])",Chrome 76.0.3809.100,Enter address,,2019-10-21 06:12:44,2019-10-21 06:12:45,0.820s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/ZIP_CODE""), zipCode, ""zipcode"", [pageLoadTime])",Chrome 76.0.3809.100,Enter zip code,,2019-10-21 06:12:45,2019-10-21 06:12:46,0.847s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/TELEPHONE""), telephone, ""Telephone"", [pageLoadTime])",Chrome 76.0.3809.100,enter telephone,,2019-10-21 06:12:46,2019-10-21 06:12:47,1.005s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/EMAIL_ADDRESS""), emailAddress, ""EMAIL address"", [pageLoadTime])",Chrome 76.0.3809.100,enter email address,,2019-10-21 06:12:47,2019-10-21 06:12:48,1.174s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Information_Page/NEXT_BUTTON""), ""Next"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Next,,2019-10-21 06:12:48,2019-10-21 06:12:49,1.153s,PASSED
+"pages.Quicksti.verifyUserPaymentDetails(paymentAmount, firstName, lastName, CardNumber)",Chrome 76.0.3809.100,"Verify details like first and last name,amount,card num",,2019-10-21 06:12:49,2019-10-21 06:12:50,0.397s,PASSED
+"scrollToElement(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), 30)",Chrome 76.0.3809.100,,,2019-10-21 06:12:50,2019-10-21 06:12:50,0.126s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/PROCESS""), ""Process"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Process,,2019-10-21 06:12:50,2019-10-21 06:12:53,3.348s,PASSED
+"PaymentId = pages.Quicksti.verifyPaymentApproval(findTestObject(""CERTPAY_QUICKSTI/Payment_Details_Verification_Page/APPROVED""))",Chrome 76.0.3809.100,Verify payment approval,,2019-10-21 06:12:53,2019-10-21 06:12:55,2.257s,PASSED
+navigateToUrl(Reports_url),Chrome 76.0.3809.100,Navigate to reports site,,2019-10-21 06:12:55,2019-10-21 06:12:56,0.533s,PASSED
+"pages.Bureau_Login_Page.loginToReportsSite(userName, password, accessCode)",Chrome 76.0.3809.100," Enter username,password,access code and Click On Login",,2019-10-21 06:12:56,2019-10-21 06:13:00,3.895s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 06:13:00,2019-10-21 06:13:01,0.847s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/REPORTING""), ""Reporting"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Reporting,,2019-10-21 06:13:01,2019-10-21 06:13:01,0.753s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/QUICK_FIND_PAYMENT""), ""Quick find payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Quick Find Payment,,2019-10-21 06:13:01,2019-10-21 06:13:03,1.059s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/PAYMENT_ID_INPUT_FIELD""), PaymentId, ""Payment id"", [pageLoadTime])",Chrome 76.0.3809.100,Enter Payment id,,2019-10-21 06:13:03,2019-10-21 06:13:03,0.842s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON_1""), ""Search button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Search,,2019-10-21 06:13:03,2019-10-21 06:13:04,1.053s,PASSED
+"pages.Search_Page.validateApprovedTransactionsInReports(PaymentId, ""American Express"", amount_Value)",Chrome 76.0.3809.100,"Verify payment id,amount,cardType",,2019-10-21 06:13:04,2019-10-21 06:13:05,0.325s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:13:05,2019-10-21 06:13:05,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 06:13:05,2019-10-21 06:13:06,1.053s,PASSED

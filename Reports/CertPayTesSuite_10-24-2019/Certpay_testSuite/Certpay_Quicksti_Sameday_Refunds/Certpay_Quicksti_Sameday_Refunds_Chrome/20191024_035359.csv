@@ -1,0 +1,52 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Certpay_Quicksti_Sameday_Refunds,Chrome 76.0.3809.100,,,2019-10-24 03:55:47,2019-10-24 04:17:42,21m - 54.803s,INCOMPLETE
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_001_VISA_SingleTxn_Sameday_FullRefund,Chrome 76.0.3809.100,,,2019-10-24 03:55:51,2019-10-24 04:05:35,9m - 44.160s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 03:55:51,2019-10-24 03:55:51,0.006s,PASSED
+"callTestCase(findTestCase(""Certpay_Quicksti/TC_001_Visa_SingleLinePayment""), [""expMonth"":""03"", ""expYear"":""2022"", ""securityCode"":""207"", ""paymentAmount"":""15.00"", ""quantity"":""2"", ""referenceNum"":""11"", ""address"":""14-6"", ... ], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-24 03:55:55,2019-10-24 04:03:20,7m - 25.294s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/REQUEST_REFUND""), ""Request refund"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 04:03:20,2019-10-24 04:03:40,19.921s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/SET_TO_FULL_REFUND""), ""Set to full refund"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 04:03:40,2019-10-24 04:04:09,29.396s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SAME_DAY_REFUNDS/CUSTOMER_REQUESTED_REFUND_RADIO_BUTTON""), ""Customer requested"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Bank card' radio button,,2019-10-24 04:04:09,2019-10-24 04:04:26,16.084s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""SAME_DAY_REFUNDS/REASON_FOR_REFUND_DROPDOWN""), ""Not For This Bureau"", ""Reason for Refund"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-24 04:04:26,2019-10-24 04:04:56,30.569s,PASSED
+"originalAmount = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/ORIGINAL_AMOUNT""))",Chrome 76.0.3809.100,,,2019-10-24 04:04:56,2019-10-24 04:05:00,3.663s,PASSED
+"amountToRefund = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/AMOUNT_TO_REFUND""))",Chrome 76.0.3809.100,,,2019-10-24 04:05:00,2019-10-24 04:05:03,2.916s,PASSED
+"result = verifyEqual(amountToRefund, originalAmount)",Chrome 76.0.3809.100,,,2019-10-24 04:05:03,2019-10-24 04:05:03,0.011s,PASSED
+if (result),Chrome 76.0.3809.100,,,2019-10-24 04:05:03,2019-10-24 04:05:35,32.458s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-24 04:05:35,2019-10-24 04:05:35,0.000s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_002_VISA_MultiTxn_Sameday_FullRefund,Chrome 76.0.3809.100,,,2019-10-24 04:05:35,2019-10-24 04:10:38,5m - 2.761s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 04:05:35,2019-10-24 04:05:35,0.000s,PASSED
+"callTestCase(findTestCase(""Certpay_Quicksti/TC_002_Visa_MultiLinePayment""), [""paymentAmount"":""22.00"", ""quantity"":""2"", ""referenceNum"":""11"", ""comments"":""Testing"", ""paymentAmount2"":""33.00"", ""paymentType"":""Licenses"", ... ], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-24 04:05:37,2019-10-24 04:10:05,4m - 27.944s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/REQUEST_REFUND""), ""Request refund"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 04:10:05,2019-10-24 04:10:09,3.882s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/SET_TO_FULL_REFUND""), ""Set to full refund"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 04:10:09,2019-10-24 04:10:10,1.605s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SAME_DAY_REFUNDS/CUSTOMER_REQUESTED_REFUND_RADIO_BUTTON""), ""Customer requested"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Bank card' radio button,,2019-10-24 04:10:10,2019-10-24 04:10:16,5.657s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""SAME_DAY_REFUNDS/REASON_FOR_REFUND_DROPDOWN""), ""Not For This Bureau"", ""Reason for Refund"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-24 04:10:16,2019-10-24 04:10:24,8.372s,PASSED
+"originalAmount = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/ORIGINAL_AMOUNT""))",Chrome 76.0.3809.100,,,2019-10-24 04:10:24,2019-10-24 04:10:25,0.346s,PASSED
+"amountToRefund = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/AMOUNT_TO_REFUND""))",Chrome 76.0.3809.100,,,2019-10-24 04:10:25,2019-10-24 04:10:26,1.800s,PASSED
+"result = verifyEqual(amountToRefund, originalAmount)",Chrome 76.0.3809.100,,,2019-10-24 04:10:26,2019-10-24 04:10:26,0.002s,PASSED
+if (result),Chrome 76.0.3809.100,,,2019-10-24 04:10:26,2019-10-24 04:10:38,11.506s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-24 04:10:38,2019-10-24 04:10:38,0.000s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_003_VISA_SingleTxn_Sameday_PartialRefund,Chrome 76.0.3809.100,,,2019-10-24 04:10:38,2019-10-24 04:14:15,3m - 37.075s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 04:10:38,2019-10-24 04:10:38,0.000s,PASSED
+"callTestCase(findTestCase(""Certpay_Quicksti/TC_001_Visa_SingleLinePayment""), [""expMonth"":""03"", ""expYear"":""2022"", ""securityCode"":""207"", ""paymentAmount"":""15.00"", ""quantity"":""2"", ""referenceNum"":""11"", ""address"":""14-6"", ... ], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-24 04:10:38,2019-10-24 04:13:46,3m - 7.521s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/REQUEST_REFUND""), ""Request refund"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 04:13:46,2019-10-24 04:13:50,4.373s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SAME_DAY_REFUNDS/AMOUNT_TO_REFUND""), refundAmount, ""Amount"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 04:13:50,2019-10-24 04:13:55,4.632s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SAME_DAY_REFUNDS/CUSTOMER_REQUESTED_REFUND_RADIO_BUTTON""), ""Customer requested"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Bank card' radio button,,2019-10-24 04:13:55,2019-10-24 04:14:02,6.993s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""SAME_DAY_REFUNDS/REASON_FOR_REFUND_DROPDOWN""), ""Not For This Bureau"", ""Reason for Refund"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-24 04:14:02,2019-10-24 04:14:04,2.557s,PASSED
+"originalAmount = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/ORIGINAL_AMOUNT""))",Chrome 76.0.3809.100,,,2019-10-24 04:14:04,2019-10-24 04:14:05,0.370s,PASSED
+"result = verifyLessThanOrEqual(refundAmount, originalAmount)",Chrome 76.0.3809.100,,,2019-10-24 04:14:05,2019-10-24 04:14:05,0.009s,PASSED
+if (result),Chrome 76.0.3809.100,,,2019-10-24 04:14:05,2019-10-24 04:14:15,10.224s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-24 04:14:15,2019-10-24 04:14:15,0.000s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_004_VISA_MultiTxn_Sameday_PartialRefund,Chrome 76.0.3809.100,,,2019-10-24 04:14:15,2019-10-24 04:17:42,3m - 26.848s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-24 04:14:15,2019-10-24 04:14:15,0.000s,PASSED
+"callTestCase(findTestCase(""Certpay_Quicksti/TC_002_Visa_MultiLinePayment""), [""paymentAmount"":""22.00"", ""quantity"":""2"", ""referenceNum"":""11"", ""comments"":""Testing"", ""paymentAmount2"":""33.00"", ""paymentType"":""Licenses"", ... ], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-10-24 04:14:16,2019-10-24 04:17:33,3m - 16.894s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/REQUEST_REFUND""), ""Request refund"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 04:17:33,2019-10-24 04:17:34,1.389s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SAME_DAY_REFUNDS/AMOUNT_TO_REFUND""), refundAmount, ""Amount"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-24 04:17:34,2019-10-24 04:17:35,0.994s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SAME_DAY_REFUNDS/CUSTOMER_REQUESTED_REFUND_RADIO_BUTTON""), ""Customer requested"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Bank card' radio button,,2019-10-24 04:17:35,2019-10-24 04:17:36,1.359s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""SAME_DAY_REFUNDS/REASON_FOR_REFUND_DROPDOWN""), ""Not For This Bureau"", ""Reason for Refund"", [pageLoadTime])",Chrome 76.0.3809.100,Select Payment type,,2019-10-24 04:17:36,2019-10-24 04:17:37,1.166s,PASSED
+"originalAmount = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/ORIGINAL_AMOUNT""))",Chrome 76.0.3809.100,,,2019-10-24 04:17:37,2019-10-24 04:17:38,0.106s,PASSED
+"result = verifyLessThanOrEqual(refundAmount, originalAmount)",Chrome 76.0.3809.100,,,2019-10-24 04:17:38,2019-10-24 04:17:38,0.002s,PASSED
+if (result),Chrome 76.0.3809.100,,,2019-10-24 04:17:38,2019-10-24 04:17:42,4.343s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-24 04:17:42,2019-10-24 04:17:42,0.000s,PASSED

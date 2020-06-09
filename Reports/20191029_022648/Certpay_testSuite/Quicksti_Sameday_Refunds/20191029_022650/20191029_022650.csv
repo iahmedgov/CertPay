@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Quicksti_Sameday_Refunds,Chrome 76.0.3809.100,,,2019-10-29 02:27:11,2019-10-29 02:29:33,2m - 21.702s,INCOMPLETE
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_001_VISA_SingleTxn_Sameday_FullRefund,Chrome 76.0.3809.100,,,2019-10-29 02:27:12,2019-10-29 02:27:42,30.585s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 02:27:12,2019-10-29 02:27:12,0.249s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Chrome 76.0.3809.100,,,2019-10-29 02:27:13,2019-10-29 02:27:16,2.949s,PASSED
+paymentIdList = [],Chrome 76.0.3809.100,,,2019-10-29 02:27:16,2019-10-29 02:27:16,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 02:27:16,2019-10-29 02:27:42,26.690s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 02:27:42,2019-10-29 02:27:42,0.001s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_002_VISA_MultiTxn_Sameday_FullRefund,Chrome 76.0.3809.100,,,2019-10-29 02:27:42,2019-10-29 02:28:23,40.647s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 02:27:43,2019-10-29 02:27:43,0.005s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:27:44,0.428s,PASSED
+amountList = [],Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:27:44,0.001s,PASSED
+referenceList = [],Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:27:44,0.001s,PASSED
+paymentTypeList = [],Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:27:44,0.010s,PASSED
+quantityList = [],Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:27:44,0.002s,PASSED
+commentsList = [],Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:27:44,0.007s,PASSED
+paymentIdList = [],Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:27:44,0.003s,PASSED
+list = new java.util.ArrayList(),Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:27:44,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 02:27:44,2019-10-29 02:28:23,38.917s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 02:28:23,2019-10-29 02:28:23,0.000s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_003_VISA_SingleTxn_Sameday_PartialRefund,Chrome 76.0.3809.100,,,2019-10-29 02:28:23,2019-10-29 02:28:58,35.250s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 02:28:23,2019-10-29 02:28:23,0.001s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Chrome 76.0.3809.100,,,2019-10-29 02:28:24,2019-10-29 02:28:24,0.377s,PASSED
+paymentIdList = [],Chrome 76.0.3809.100,,,2019-10-29 02:28:24,2019-10-29 02:28:24,0.002s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 02:28:24,2019-10-29 02:28:58,33.945s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 02:28:58,2019-10-29 02:28:58,0.001s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_004_VISA_MultiTxn_Sameday_PartialRefund,Chrome 76.0.3809.100,,,2019-10-29 02:28:58,2019-10-29 02:29:33,34.652s,ERROR
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 02:28:58,2019-10-29 02:28:58,0.000s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Chrome 76.0.3809.100,,,2019-10-29 02:28:59,2019-10-29 02:28:59,0.154s,PASSED
+amountList = [],Chrome 76.0.3809.100,,,2019-10-29 02:28:59,2019-10-29 02:28:59,0.001s,PASSED
+referenceList = [],Chrome 76.0.3809.100,,,2019-10-29 02:28:59,2019-10-29 02:28:59,0.001s,PASSED
+paymentTypeList = [],Chrome 76.0.3809.100,,,2019-10-29 02:28:59,2019-10-29 02:28:59,0.000s,PASSED
+quantityList = [],Chrome 76.0.3809.100,,,2019-10-29 02:28:59,2019-10-29 02:29:00,0.112s,PASSED
+commentsList = [],Chrome 76.0.3809.100,,,2019-10-29 02:29:00,2019-10-29 02:29:00,0.001s,PASSED
+paymentIdList = [],Chrome 76.0.3809.100,,,2019-10-29 02:29:00,2019-10-29 02:29:00,0.012s,PASSED
+list = new java.util.ArrayList(),Chrome 76.0.3809.100,,,2019-10-29 02:29:00,2019-10-29 02:29:00,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 02:29:00,2019-10-29 02:29:33,33.409s,ERROR
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 02:29:33,2019-10-29 02:29:33,0.000s,PASSED

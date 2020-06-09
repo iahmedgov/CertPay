@@ -1,0 +1,57 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Quicksti,Chrome 76.0.3809.100,,,2019-10-29 08:03:52,2019-10-29 08:45:24,41m - 32.286s,INCOMPLETE
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_001_SingleBureauSite_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-29 08:03:53,2019-10-29 08:16:10,12m - 17.091s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:03:56,2019-10-29 08:03:56,0.000s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Chrome 76.0.3809.100,,,2019-10-29 08:03:57,2019-10-29 08:04:00,3.093s,PASSED
+paymentIdList = [],Chrome 76.0.3809.100,,,2019-10-29 08:04:00,2019-10-29 08:04:00,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 08:04:00,2019-10-29 08:15:37,11m - 36.760s,PASSED
+return paymentIdList,Chrome 76.0.3809.100,,,2019-10-29 08:15:37,2019-10-29 08:15:37,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:15:37,2019-10-29 08:16:10,33.307s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:16:10,2019-10-29 08:16:10,0.001s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_002_MultiBureauSite_SingleBureau_MultiLinePayment,Chrome 76.0.3809.100,,,2019-10-29 08:16:10,2019-10-29 08:25:09,8m - 58.248s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.001s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.086s,PASSED
+amountList = [],Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.000s,PASSED
+referenceList = [],Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.001s,PASSED
+paymentTypeList = [],Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.000s,PASSED
+quantityList = [],Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.000s,PASSED
+commentsList = [],Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.000s,PASSED
+paymentIdList = [],Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.000s,PASSED
+list = new java.util.ArrayList(),Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:16:11,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 08:16:11,2019-10-29 08:24:42,8m - 31.092s,PASSED
+return paymentIdList,Chrome 76.0.3809.100,,,2019-10-29 08:24:42,2019-10-29 08:24:42,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:24:42,2019-10-29 08:25:09,26.471s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:25:09,2019-10-29 08:25:09,0.001s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_003_MultiBureauSite_SingleBureau_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-29 08:25:09,2019-10-29 08:32:33,7m - 24.136s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:25:09,2019-10-29 08:25:09,0.000s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Chrome 76.0.3809.100,,,2019-10-29 08:25:10,2019-10-29 08:25:11,0.701s,PASSED
+paymentIdList = [],Chrome 76.0.3809.100,,,2019-10-29 08:25:11,2019-10-29 08:25:11,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 08:25:11,2019-10-29 08:32:31,7m - 20.513s,PASSED
+return paymentIdList,Chrome 76.0.3809.100,,,2019-10-29 08:32:31,2019-10-29 08:32:31,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:32:31,2019-10-29 08:32:33,1.656s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:32:33,2019-10-29 08:32:33,0.000s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_004_MultiBureauSite_MultiBureaus_SingleLinePayment,Chrome 76.0.3809.100,,,2019-10-29 08:32:33,2019-10-29 08:38:27,5m - 54.003s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:32:33,2019-10-29 08:32:33,0.000s,PASSED
+"data = findTestData(""Data Files/Certpay/MultiBureau_SingleLine"")",Chrome 76.0.3809.100,,,2019-10-29 08:32:33,2019-10-29 08:32:33,0.143s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 08:32:33,2019-10-29 08:38:25,5m - 51.844s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:38:25,2019-10-29 08:38:27,1.480s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.000s,PASSED
+,,,,,,,
+Test Cases/Certpay_Quicksti/TC_005_MultiBureauSite_MultiBureaus_MultiLinePayments,Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:45:24,6m - 57.088s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.000s,PASSED
+"data = findTestData(""Certpay/MultiBureau_MultiLine"")",Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.065s,PASSED
+amountList = [],Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.001s,PASSED
+referenceList = [],Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.000s,PASSED
+paymentTypeList = [],Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.001s,PASSED
+quantityList = [],Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.000s,PASSED
+commentsList = [],Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.000s,PASSED
+paymentIdList = [],Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.000s,PASSED
+list = new java.util.ArrayList(),Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:38:27,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Chrome 76.0.3809.100,,,2019-10-29 08:38:27,2019-10-29 08:45:22,6m - 54.759s,PASSED
+return paymentIdList,Chrome 76.0.3809.100,,,2019-10-29 08:45:22,2019-10-29 08:45:22,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:45:22,2019-10-29 08:45:24,1.661s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 76.0.3809.100,,,2019-10-29 08:45:24,2019-10-29 08:45:24,0.000s,PASSED

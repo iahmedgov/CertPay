@@ -1,0 +1,295 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Consumer_Make_Payment,Chrome 76.0.3809.100,,,2019-10-21 03:56:14,2019-10-21 04:12:04,15m - 50.173s,INCOMPLETE
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_001_Credit_SingleLine_Payment,Chrome 76.0.3809.100,,,2019-10-21 03:56:17,2019-10-21 03:59:02,2m - 45.351s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 03:56:22,2019-10-21 03:56:22,0.006s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 03:56:22,2019-10-21 03:56:24,1.497s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-21 03:56:25,2019-10-21 03:56:44,18.507s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-21 03:56:44,2019-10-21 03:56:46,2.331s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-21 03:56:46,2019-10-21 03:56:50,3.988s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 03:56:50,2019-10-21 03:56:53,3.011s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/BANK_CARD""), ""Bank card"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Bank card' radio button,,2019-10-21 03:56:53,2019-10-21 03:56:59,5.826s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Chrome 76.0.3809.100,"Enter Payment Amount,reference num,comments",,2019-10-21 03:56:59,2019-10-21 03:57:11,12.390s,PASSED
+waitForPageLoad(0),Chrome 76.0.3809.100,,,2019-10-21 03:57:11,2019-10-21 03:57:11,0.086s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/CARD_TYPE""), CardType, ""CardType"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Visa' from card type dropdown,,2019-10-21 03:57:11,2019-10-21 03:57:13,1.647s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Payment type',,2019-10-21 03:57:13,2019-10-21 03:57:16,3.240s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 03:57:16,2019-10-21 03:57:22,5.438s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Chrome 76.0.3809.100,"Enter First and Last name,telephone",,2019-10-21 03:57:22,2019-10-21 03:57:34,12.700s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Chrome 76.0.3809.100,"Enter address and zip code
+",,2019-10-21 03:57:34,2019-10-21 03:57:37,2.597s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 03:57:37,2019-10-21 03:57:38,0.687s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Chrome 76.0.3809.100,"""Select checkbox 'My billing information is same 
+information i entered in previous page'""",,2019-10-21 03:57:38,2019-10-21 03:57:40,2.627s,PASSED
+waitForPageLoad(2),Chrome 76.0.3809.100,,,2019-10-21 03:57:40,2019-10-21 03:57:40,0.033s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 03:57:40,2019-10-21 03:57:43,2.165s,PASSED
+delay(mediumWait),Chrome 76.0.3809.100,,,2019-10-21 03:57:43,2019-10-21 03:57:48,5.041s,PASSED
+"pages.Payment_Page.setCardDetails(cardNum, securityCode, expYear, expMonth)",Chrome 76.0.3809.100,"Enter card number,exp date, exp month and security code
+",,2019-10-21 03:57:48,2019-10-21 03:57:58,10.746s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,"Enter Email address
+",,2019-10-21 03:57:58,2019-10-21 03:58:01,2.515s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on continue,,2019-10-21 03:58:01,2019-10-21 03:58:02,1.514s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Chrome 76.0.3809.100,"Click on i agree
+",,2019-10-21 03:58:02,2019-10-21 03:58:04,1.627s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, CardType, """")",Chrome 76.0.3809.100,"Verify user details like first and last name,card type ,email address",,2019-10-21 03:58:04,2019-10-21 03:58:07,2.771s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on process payment,,2019-10-21 03:58:07,2019-10-21 03:58:10,3.635s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Yes',,2019-10-21 03:58:10,2019-10-21 03:58:14,3.978s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/APPROVED""), 30)",Chrome 76.0.3809.100,Verify Payment Approval,,2019-10-21 03:58:14,2019-10-21 03:58:15,0.244s,PASSED
+PaymentId = pages.Payment_Page.verifyCardPaymentApproval(referenceNum),Chrome 76.0.3809.100,Verify payment approval and note the paymentId,,2019-10-21 03:58:15,2019-10-21 03:58:18,3.806s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search Payment',,2019-10-21 03:58:18,2019-10-21 03:58:20,1.099s,PASSED
+waitForPageLoad(10),Chrome 76.0.3809.100,,,2019-10-21 03:58:20,2019-10-21 03:58:20,0.040s,PASSED
+pages.Search_Page.switchToWindow(),Chrome 76.0.3809.100,,,2019-10-21 03:58:20,2019-10-21 03:58:25,5.610s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/CREDIT_OR_DEBIT_CARD""), ""Credit card"", [mediumWait])",Chrome 76.0.3809.100,Select 'Credit or debit card' radio button,,2019-10-21 03:58:25,2019-10-21 03:58:33,7.455s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, cardNum, accNum)",Chrome 76.0.3809.100,"Enter billing last name,card number",,2019-10-21 03:58:33,2019-10-21 03:58:38,4.988s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Chrome 76.0.3809.100,"Click on search
+",,2019-10-21 03:58:38,2019-10-21 03:58:41,3.790s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentId),Chrome 76.0.3809.100,"Verify payment id
+",,2019-10-21 03:58:41,2019-10-21 03:58:42,0.315s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search' icon to generate receipt,,2019-10-21 03:58:42,2019-10-21 03:58:46,4.454s,PASSED
+delay(mediumWait),Chrome 76.0.3809.100,,,2019-10-21 03:58:46,2019-10-21 03:58:51,5.004s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 0)",Chrome 76.0.3809.100,Scroll to close button,,2019-10-21 03:58:51,2019-10-21 03:58:51,0.122s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Email Receipt',,2019-10-21 03:58:51,2019-10-21 03:58:53,2.130s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 03:58:53,2019-10-21 03:58:58,4.193s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Send Email',,2019-10-21 03:58:58,2019-10-21 03:58:59,1.314s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-21 03:58:59,2019-10-21 03:59:02,3.087s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 03:59:02,2019-10-21 03:59:02,0.002s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 03:59:02,2019-10-21 03:59:02,0.000s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_002_Credit_MultiLine_Payment,Chrome 76.0.3809.100,,,2019-10-21 03:59:02,2019-10-21 04:01:42,2m - 40.043s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 03:59:03,2019-10-21 03:59:03,0.001s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 03:59:03,2019-10-21 03:59:03,0.002s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-21 03:59:03,2019-10-21 03:59:23,19.669s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-21 03:59:23,2019-10-21 03:59:25,1.867s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-21 03:59:25,2019-10-21 03:59:29,4.117s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 03:59:29,2019-10-21 03:59:30,1.293s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Chrome 76.0.3809.100,"Enter Payment Amount,refernce num,comments",,2019-10-21 03:59:30,2019-10-21 03:59:34,3.547s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/ADD_ANOTHER_PROPERTY""), ""Multi-Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Add another property',,2019-10-21 03:59:34,2019-10-21 03:59:35,1.503s,PASSED
+"pages.Payment_Page.setAmount(""2"", paymentAmount2, ""Payment for testing"", ""22"")",Chrome 76.0.3809.100,"Enter Payment Amount,refernce num,comments",,2019-10-21 03:59:35,2019-10-21 03:59:38,3.076s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/BANK_CARD""), ""Bank card"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Bank card' radio button,,2019-10-21 03:59:38,2019-10-21 03:59:40,2.110s,PASSED
+waitForPageLoad(2),Chrome 76.0.3809.100,,,2019-10-21 03:59:40,2019-10-21 03:59:40,0.030s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/CARD_TYPE""), cardType, ""CardType"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Discover' from card type dropdown,,2019-10-21 03:59:40,2019-10-21 03:59:42,1.453s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Payment type',,2019-10-21 03:59:42,2019-10-21 03:59:43,1.393s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 03:59:43,2019-10-21 03:59:45,1.346s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Chrome 76.0.3809.100,"Enter First and Last name,telephone",,2019-10-21 03:59:45,2019-10-21 03:59:48,3.622s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Chrome 76.0.3809.100,Enter address and Zip code,,2019-10-21 03:59:48,2019-10-21 03:59:50,2.019s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Chrome 76.0.3809.100,Click on continue,,2019-10-21 03:59:50,2019-10-21 03:59:51,0.332s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Chrome 76.0.3809.100,"""Select checkbox 'My billing information is same 
+information i entered in previous page'""",,2019-10-21 03:59:51,2019-10-21 03:59:52,1.551s,PASSED
+waitForPageLoad(0),Chrome 76.0.3809.100,,,2019-10-21 03:59:52,2019-10-21 03:59:52,0.036s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on continue,,2019-10-21 03:59:52,2019-10-21 03:59:53,1.155s,PASSED
+"pages.Payment_Page.setCardDetails(cardNum, securityCode, expYear, expMonth)",Chrome 76.0.3809.100,"Enter card number,exp date,exp month,security code",,2019-10-21 03:59:53,2019-10-21 03:59:59,5.786s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter email address,,2019-10-21 03:59:59,2019-10-21 04:00:03,3.513s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Continue,,2019-10-21 04:00:03,2019-10-21 04:00:20,16.884s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'I agree',,2019-10-21 04:00:20,2019-10-21 04:00:26,6.549s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, cardType, """")",Chrome 76.0.3809.100,Verify user details,,2019-10-21 04:00:26,2019-10-21 04:00:31,4.882s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process Payment',,2019-10-21 04:00:31,2019-10-21 04:00:34,2.864s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Yes',,2019-10-21 04:00:34,2019-10-21 04:00:37,3.064s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/APPROVED""), 30)",Chrome 76.0.3809.100,Verify paymnet Approval,,2019-10-21 04:00:37,2019-10-21 04:00:37,0.442s,PASSED
+PaymentID = pages.Payment_Page.verifyCardPaymentApproval(referenceNum),Chrome 76.0.3809.100,Verify payment details and note paymnetId,,2019-10-21 04:00:37,2019-10-21 04:00:42,4.902s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search Payment',,2019-10-21 04:00:42,2019-10-21 04:00:50,7.450s,PASSED
+waitForPageLoad(10),Chrome 76.0.3809.100,,,2019-10-21 04:00:50,2019-10-21 04:00:50,0.394s,PASSED
+pages.Search_Page.switchToWindow(),Chrome 76.0.3809.100,,,2019-10-21 04:00:50,2019-10-21 04:00:57,7.055s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/CREDIT_OR_DEBIT_CARD""), ""Credit card"", [mediumWait])",Chrome 76.0.3809.100,Select 'Credit or debit card' radio button,,2019-10-21 04:00:57,2019-10-21 04:01:06,8.886s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, cardNum, accNum)",Chrome 76.0.3809.100,"Enter billing last name,card num",,2019-10-21 04:01:06,2019-10-21 04:01:10,4.225s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search',,2019-10-21 04:01:10,2019-10-21 04:01:15,4.715s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Chrome 76.0.3809.100,Verify payment details,,2019-10-21 04:01:15,2019-10-21 04:01:16,0.984s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search' icon to generate receipt,,2019-10-21 04:01:16,2019-10-21 04:01:17,1.369s,PASSED
+delay(mediumWait),Chrome 76.0.3809.100,,,2019-10-21 04:01:17,2019-10-21 04:01:22,5.003s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 0)",Chrome 76.0.3809.100,"scroll to close button
+",,2019-10-21 04:01:22,2019-10-21 04:01:22,0.176s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Email Receipt',,2019-10-21 04:01:23,2019-10-21 04:01:25,2.685s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:01:25,2019-10-21 04:01:26,1.144s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Send Email',,2019-10-21 04:01:26,2019-10-21 04:01:28,1.340s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-21 04:01:28,2019-10-21 04:01:42,14.453s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:01:42,2019-10-21 04:01:42,0.001s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:01:42,2019-10-21 04:01:42,0.000s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_003_Echeck_Checking_SingleLine_Payment,Chrome 76.0.3809.100,,,2019-10-21 04:01:42,2019-10-21 04:05:26,3m - 44.058s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:01:42,2019-10-21 04:01:42,0.001s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:01:42,2019-10-21 04:01:42,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-21 04:01:43,2019-10-21 04:01:57,13.795s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-21 04:01:57,2019-10-21 04:01:59,1.950s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-21 04:01:59,2019-10-21 04:02:01,2.455s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:02:01,2019-10-21 04:02:03,1.401s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/ELECTRONIC_CHECK""), ""Echeck"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Electronic check' radio button,,2019-10-21 04:02:03,2019-10-21 04:02:04,1.819s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Chrome 76.0.3809.100,"Enter payment amount,reference nu8m,comments",,2019-10-21 04:02:04,2019-10-21 04:02:09,4.394s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Payment type',,2019-10-21 04:02:09,2019-10-21 04:02:11,1.909s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:02:11,2019-10-21 04:02:13,2.506s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Chrome 76.0.3809.100,"Enter First and Last name,telephone",,2019-10-21 04:02:13,2019-10-21 04:02:18,4.857s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Chrome 76.0.3809.100,Enter address details,,2019-10-21 04:02:18,2019-10-21 04:02:28,9.521s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:02:28,2019-10-21 04:02:30,1.974s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Chrome 76.0.3809.100,Select checkbox 'My billing information is same information i entered in previous page',,2019-10-21 04:02:30,2019-10-21 04:02:33,3.758s,PASSED
+waitForPageLoad(2),Chrome 76.0.3809.100,,,2019-10-21 04:02:33,2019-10-21 04:02:33,0.013s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:02:33,2019-10-21 04:02:37,3.703s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/ACC_TYPE_CHECKING""), ""Checking"", [pageLoadTime])",Chrome 76.0.3809.100,Select Account type as 'Checking',,2019-10-21 04:02:37,2019-10-21 04:02:39,1.826s,PASSED
+"pages.Payment_Page.setElectronicCheckInformation(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CHECKING_ACCOUNT_NUMBER""), findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CONFIRM_CHECKING_ACC_NUM""), routingNum, checkingAccNum)",Chrome 76.0.3809.100,"Enter 'Routing Number',checking acc num",,2019-10-21 04:02:39,2019-10-21 04:02:49,10.578s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:02:49,2019-10-21 04:02:52,2.133s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/SIGNATURE""), firstName, ""First name"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Signature',,2019-10-21 04:02:52,2019-10-21 04:02:55,3.243s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/AGREEMENT""), ""Yes"", ""Agreement"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Agreement' (Yes),,2019-10-21 04:02:55,2019-10-21 04:02:56,1.099s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CHECK_CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Continue,,2019-10-21 04:02:56,2019-10-21 04:02:57,1.371s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on Continue,,2019-10-21 04:02:57,2019-10-21 04:02:59,1.617s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'I agree',,2019-10-21 04:02:59,2019-10-21 04:03:05,6.435s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, ""VISA"", ""Checking"")",Chrome 76.0.3809.100,verify user details,,2019-10-21 04:03:05,2019-10-21 04:03:13,7.147s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process Payment',,2019-10-21 04:03:13,2019-10-21 04:03:14,1.173s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Yes',,2019-10-21 04:03:14,2019-10-21 04:03:18,4.189s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PENDING""), 30)",Chrome 76.0.3809.100,"Verify paymnet status
+",,2019-10-21 04:03:18,2019-10-21 04:03:18,0.363s,PASSED
+PaymentID = pages.Payment_Page.verifyECheckPaymentApproval(referenceNum),Chrome 76.0.3809.100,Note paymentId,,2019-10-21 04:03:18,2019-10-21 04:03:22,3.608s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search Payment',,2019-10-21 04:03:22,2019-10-21 04:03:24,2.134s,PASSED
+waitForPageLoad(10),Chrome 76.0.3809.100,,,2019-10-21 04:03:24,2019-10-21 04:03:24,0.014s,PASSED
+pages.Search_Page.switchToWindow(),Chrome 76.0.3809.100,,,2019-10-21 04:03:24,2019-10-21 04:03:33,8.856s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/ELECTRONIC_CHECK""), ""E check"", [mediumWait])",Chrome 76.0.3809.100,Select 'E-check' radio button,,2019-10-21 04:03:33,2019-10-21 04:03:40,6.982s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, cardNum, checkingAccNum)",Chrome 76.0.3809.100,"Enter billing last name,acc num",,2019-10-21 04:03:40,2019-10-21 04:03:43,2.961s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search',,2019-10-21 04:03:43,2019-10-21 04:03:48,4.735s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Chrome 76.0.3809.100,Verify payment details,,2019-10-21 04:03:48,2019-10-21 04:03:48,0.293s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search' icon to generate receipt,,2019-10-21 04:03:48,2019-10-21 04:03:49,1.188s,PASSED
+delay(mediumWait),Chrome 76.0.3809.100,,,2019-10-21 04:03:49,2019-10-21 04:03:54,5.003s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 30)",Chrome 76.0.3809.100,,,2019-10-21 04:03:54,2019-10-21 04:03:55,0.840s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Email Receipt',,2019-10-21 04:03:55,2019-10-21 04:03:59,4.408s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:03:59,2019-10-21 04:04:26,26.664s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Send Email',,2019-10-21 04:04:26,2019-10-21 04:04:34,7.596s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-21 04:04:34,2019-10-21 04:05:26,52.679s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:05:26,2019-10-21 04:05:26,0.001s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:05:26,2019-10-21 04:05:26,0.002s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_004_Echeck_Checking_MultiLine_Payment,Chrome 76.0.3809.100,,,2019-10-21 04:05:26,2019-10-21 04:08:51,3m - 24.774s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:05:27,2019-10-21 04:05:27,0.000s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:05:27,2019-10-21 04:05:27,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-21 04:05:27,2019-10-21 04:05:41,14.050s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-21 04:05:41,2019-10-21 04:05:55,13.443s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-21 04:05:55,2019-10-21 04:05:57,2.379s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:05:57,2019-10-21 04:05:59,1.688s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/ELECTRONIC_CHECK""), ""Echeck"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Electronic check' radio button,,2019-10-21 04:05:59,2019-10-21 04:06:01,1.957s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Chrome 76.0.3809.100,"Enter payment amount,reference num,comments",,2019-10-21 04:06:01,2019-10-21 04:06:30,29.139s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/ADD_ANOTHER_PROPERTY""), ""Multi-Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Add another property',,2019-10-21 04:06:30,2019-10-21 04:06:43,13.404s,PASSED
+"pages.Payment_Page.setAmount(""2"", paymentAmount2, ""Payment for testing"", referenceNum)",Chrome 76.0.3809.100,"Enter payment amount,reference num,comments",,2019-10-21 04:06:43,2019-10-21 04:06:55,12.195s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Payment type',,2019-10-21 04:06:55,2019-10-21 04:07:00,4.837s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:07:00,2019-10-21 04:07:03,3.179s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Chrome 76.0.3809.100,"Enter First and Last name,telephone",,2019-10-21 04:07:03,2019-10-21 04:07:27,23.835s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Chrome 76.0.3809.100,Enter addess details,,2019-10-21 04:07:27,2019-10-21 04:07:31,3.268s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:07:31,2019-10-21 04:07:32,1.032s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Chrome 76.0.3809.100,Select checkbox 'My billing information is same information i entered in previous page',,2019-10-21 04:07:32,2019-10-21 04:07:34,2.811s,PASSED
+waitForPageLoad(2),Chrome 76.0.3809.100,,,2019-10-21 04:07:34,2019-10-21 04:07:34,0.019s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:07:34,2019-10-21 04:07:40,6.112s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/ACC_TYPE_CHECKING""), ""Checking"", [pageLoadTime])",Chrome 76.0.3809.100,Select Account type as 'Checking',,2019-10-21 04:07:40,2019-10-21 04:07:48,7.272s,PASSED
+"pages.Payment_Page.setElectronicCheckInformation(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CHECKING_ACCOUNT_NUMBER""), findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CONFIRM_CHECKING_ACC_NUM""), routingNum, checkingAccNum)",Chrome 76.0.3809.100,"Enter 'Routing Number',checking account num",,2019-10-21 04:07:48,2019-10-21 04:07:59,10.962s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:07:59,2019-10-21 04:08:00,1.226s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/SIGNATURE""), firstName, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Signature',,2019-10-21 04:08:00,2019-10-21 04:08:01,0.882s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/AGREEMENT""), ""Yes"", ""Agreement"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Agreement' (Yes),,2019-10-21 04:08:01,2019-10-21 04:08:02,1.095s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CHECK_CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:08:02,2019-10-21 04:08:05,3.400s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'I accept',,2019-10-21 04:08:05,2019-10-21 04:08:08,2.508s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Chrome 76.0.3809.100,,,2019-10-21 04:08:08,2019-10-21 04:08:09,1.470s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, ""Discover"", ""Checking"")",Chrome 76.0.3809.100,Verify user details,,2019-10-21 04:08:09,2019-10-21 04:08:14,4.432s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process Payment',,2019-10-21 04:08:14,2019-10-21 04:08:15,1.030s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Yes',,2019-10-21 04:08:15,2019-10-21 04:08:16,1.660s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PENDING""), 30)",Chrome 76.0.3809.100,Verify Payment Status,,2019-10-21 04:08:16,2019-10-21 04:08:17,0.091s,PASSED
+PaymentID = pages.Payment_Page.verifyECheckPaymentApproval(referenceNum),Chrome 76.0.3809.100,Verify details and notedown payment id,,2019-10-21 04:08:17,2019-10-21 04:08:19,2.314s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search Payment',,2019-10-21 04:08:19,2019-10-21 04:08:20,1.361s,PASSED
+waitForPageLoad(10),Chrome 76.0.3809.100,,,2019-10-21 04:08:20,2019-10-21 04:08:20,0.099s,PASSED
+pages.Search_Page.switchToWindow(),Chrome 76.0.3809.100,,,2019-10-21 04:08:20,2019-10-21 04:08:26,5.222s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/ELECTRONIC_CHECK""), ""Echeck"", [mediumWait])",Chrome 76.0.3809.100,Select 'E-check' radio button,,2019-10-21 04:08:26,2019-10-21 04:08:32,6.402s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, VISA, checkingAccNum)",Chrome 76.0.3809.100,"Enter billing last name,acc num",,2019-10-21 04:08:32,2019-10-21 04:08:38,6.204s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search',,2019-10-21 04:08:38,2019-10-21 04:08:41,2.799s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Chrome 76.0.3809.100,Verify payment details,,2019-10-21 04:08:41,2019-10-21 04:08:42,0.826s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search' icon to generate receipt,,2019-10-21 04:08:42,2019-10-21 04:08:43,1.682s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 0)",Chrome 76.0.3809.100,,,2019-10-21 04:08:43,2019-10-21 04:08:44,0.562s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Email Receipt',,2019-10-21 04:08:44,2019-10-21 04:08:47,2.865s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:08:47,2019-10-21 04:08:48,1.610s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Send Email',,2019-10-21 04:08:48,2019-10-21 04:08:50,1.351s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-21 04:08:50,2019-10-21 04:08:51,1.152s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:08:51,2019-10-21 04:08:51,0.001s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:08:51,2019-10-21 04:08:51,0.001s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_005_Echeck_Savings_SingleLine_Payment,Chrome 76.0.3809.100,,,2019-10-21 04:08:51,2019-10-21 04:10:10,1m - 18.742s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:08:51,2019-10-21 04:08:51,0.001s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:08:51,2019-10-21 04:08:51,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-21 04:08:52,2019-10-21 04:09:05,12.903s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-21 04:09:05,2019-10-21 04:09:05,0.756s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-21 04:09:05,2019-10-21 04:09:07,1.779s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:09:07,2019-10-21 04:09:08,0.975s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/ELECTRONIC_CHECK""), ""Electronic check"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Electronic check' radio button,,2019-10-21 04:09:08,2019-10-21 04:09:10,1.510s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Chrome 76.0.3809.100,"Enter Payment Amount,reference num,comments",,2019-10-21 04:09:10,2019-10-21 04:09:12,2.618s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Payment type',,2019-10-21 04:09:12,2019-10-21 04:09:13,0.983s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:09:13,2019-10-21 04:09:15,1.562s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Chrome 76.0.3809.100,"Enter First and Last name,telephone",,2019-10-21 04:09:15,2019-10-21 04:09:18,3.004s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Chrome 76.0.3809.100,Enter address details,,2019-10-21 04:09:18,2019-10-21 04:09:20,1.981s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:09:20,2019-10-21 04:09:20,0.500s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Chrome 76.0.3809.100,Select checkbox 'My billing information is same information i entered in previous page',,2019-10-21 04:09:20,2019-10-21 04:09:23,2.583s,PASSED
+waitForPageLoad(2),Chrome 76.0.3809.100,,,2019-10-21 04:09:23,2019-10-21 04:09:23,0.017s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:09:23,2019-10-21 04:09:25,1.616s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/ACC_TYPE_SAVINGS""), ""Savings"", [pageLoadTime])",Chrome 76.0.3809.100,Select Account type as 'Savings',,2019-10-21 04:09:25,2019-10-21 04:09:26,1.547s,PASSED
+"pages.Payment_Page.setElectronicCheckInformation(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CHECKING_ACCOUNT_NUMBER""), findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CONFIRM_CHECKING_ACC_NUM""), routingNum, checkingAccNum)",Chrome 76.0.3809.100,"Enter 'Routing Number',Checking acc num",,2019-10-21 04:09:26,2019-10-21 04:09:32,5.572s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:09:32,2019-10-21 04:09:34,1.907s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/SIGNATURE""), firstName, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Signature',,2019-10-21 04:09:34,2019-10-21 04:09:34,0.862s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/AGREEMENT""), ""Yes"", ""Agreement"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Agreement' (Yes),,2019-10-21 04:09:34,2019-10-21 04:09:35,0.995s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CHECK_CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:09:35,2019-10-21 04:09:36,0.912s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'I accept',,2019-10-21 04:09:36,2019-10-21 04:09:38,1.688s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'I agree',,2019-10-21 04:09:38,2019-10-21 04:09:39,1.219s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, ""Discover"", ""Savings"")",Chrome 76.0.3809.100,,,2019-10-21 04:09:39,2019-10-21 04:09:44,4.334s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process Payment',,2019-10-21 04:09:44,2019-10-21 04:09:45,1.450s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Yes',,2019-10-21 04:09:45,2019-10-21 04:09:46,1.258s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PENDING""), 30)",Chrome 76.0.3809.100,Verify Payment Status,,2019-10-21 04:09:46,2019-10-21 04:09:46,0.080s,PASSED
+PaymentID = pages.Payment_Page.verifyECheckPaymentApproval(referenceNum),Chrome 76.0.3809.100,Verify details and note down payment id,,2019-10-21 04:09:46,2019-10-21 04:09:49,2.205s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search Payment',,2019-10-21 04:09:49,2019-10-21 04:09:49,0.844s,PASSED
+waitForPageLoad(10),Chrome 76.0.3809.100,,,2019-10-21 04:09:49,2019-10-21 04:09:49,0.020s,PASSED
+pages.Search_Page.switchToWindow(),Chrome 76.0.3809.100,,,2019-10-21 04:09:49,2019-10-21 04:09:55,5.451s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/ELECTRONIC_CHECK""), ""Echeck"", [mediumWait])",Chrome 76.0.3809.100,Select 'E-check' radio button,,2019-10-21 04:09:55,2019-10-21 04:10:00,5.470s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, VISA, checkingAccNum)",Chrome 76.0.3809.100,Enter billing last name,,2019-10-21 04:10:00,2019-10-21 04:10:03,2.630s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search',,2019-10-21 04:10:03,2019-10-21 04:10:05,1.792s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Chrome 76.0.3809.100,Verify payment details,,2019-10-21 04:10:05,2019-10-21 04:10:05,0.201s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search' icon to generate receipt,,2019-10-21 04:10:05,2019-10-21 04:10:06,0.791s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 30)",Chrome 76.0.3809.100,,,2019-10-21 04:10:06,2019-10-21 04:10:06,0.103s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Email Receipt',,2019-10-21 04:10:06,2019-10-21 04:10:07,0.751s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:10:07,2019-10-21 04:10:07,0.850s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Send Email',,2019-10-21 04:10:07,2019-10-21 04:10:08,0.733s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-21 04:10:08,2019-10-21 04:10:10,1.555s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:10:10,2019-10-21 04:10:10,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:10:10,2019-10-21 04:10:10,0.000s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_006_Echeck_Savings_MultiLine_Payment,Chrome 76.0.3809.100,,,2019-10-21 04:10:10,2019-10-21 04:12:04,1m - 54.371s,PASSED
+Start listener action : beforeTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:10:10,2019-10-21 04:10:10,0.001s,PASSED
+Start setup action : setupTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:10:10,2019-10-21 04:10:10,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Chrome 76.0.3809.100,Open Certpay application,,2019-10-21 04:10:11,2019-10-21 04:10:22,11.979s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Chrome 76.0.3809.100,Enter valid Bureau code,,2019-10-21 04:10:22,2019-10-21 04:10:24,1.416s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Begin Payment',,2019-10-21 04:10:24,2019-10-21 04:10:26,1.599s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/NEXT_BUTTON""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:10:26,2019-10-21 04:10:27,1.810s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Home_ Page/ELECTRONIC_CHECK""), ""Electronic check"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Electronic check' radio button,,2019-10-21 04:10:27,2019-10-21 04:10:29,1.785s,PASSED
+"pages.Payment_Page.setAmount(""1"", paymentAmount, ""testing"", referenceNum)",Chrome 76.0.3809.100,"Enter Payment Amount,reference Num,comments",,2019-10-21 04:10:29,2019-10-21 04:10:32,2.637s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/ADD_ANOTHER_PROPERTY""), ""Multi-Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Add another property',,2019-10-21 04:10:32,2019-10-21 04:10:33,1.162s,PASSED
+"pages.Payment_Page.setAmount(""2"", paymentAmount2, ""Payment for testing"", referenceNum)",Chrome 76.0.3809.100,"Enter Payment Amount,reference Num,comments",,2019-10-21 04:10:33,2019-10-21 04:10:40,6.995s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""MAKE_ PAYMENT/Home_ Page/PAYMENT_TYPE""), paymentType, ""Payment Type"", [pageLoadTime])",Chrome 76.0.3809.100,Select 'Payment type',,2019-10-21 04:10:40,2019-10-21 04:10:42,1.773s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:10:42,2019-10-21 04:10:45,2.995s,PASSED
+"pages.Payment_Page.setPersonalDetails(firstName, lastName, telephone)",Chrome 76.0.3809.100,"Enter First and Last name,telephone",,2019-10-21 04:10:45,2019-10-21 04:10:49,4.278s,PASSED
+"pages.Payment_Page.setLocationDetails(address, zipCode)",Chrome 76.0.3809.100,Enter address details,,2019-10-21 04:10:49,2019-10-21 04:10:53,3.680s,PASSED
+"pages.Payment_Page.clickOnElement(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""))",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:10:53,2019-10-21 04:10:53,0.632s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CheckBox""), ""Billing CheckBox"", [pageLoadTime])",Chrome 76.0.3809.100,Select checkbox 'My billing information is same information i entered in previous page',,2019-10-21 04:10:53,2019-10-21 04:10:55,2.112s,PASSED
+waitForPageLoad(2),Chrome 76.0.3809.100,,,2019-10-21 04:10:55,2019-10-21 04:10:55,0.036s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:10:55,2019-10-21 04:10:57,1.777s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/ACC_TYPE_SAVINGS""), ""Savings"", [pageLoadTime])",Chrome 76.0.3809.100,Select Account type as 'Savings',,2019-10-21 04:10:57,2019-10-21 04:11:01,3.630s,PASSED
+"pages.Payment_Page.setElectronicCheckInformation(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CHECKING_ACCOUNT_NUMBER""), findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/CONFIRM_CHECKING_ACC_NUM""), routingNum, checkingAccNum)",Chrome 76.0.3809.100,"Enter 'Routing Number',Savings account Number",,2019-10-21 04:11:01,2019-10-21 04:11:08,6.900s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/EMAIL_ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:11:08,2019-10-21 04:11:09,1.409s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/SIGNATURE""), firstName, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Signature',,2019-10-21 04:11:09,2019-10-21 04:11:11,1.776s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/AGREEMENT""), ""Yes"", ""Agreement"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Agreement' (Yes),,2019-10-21 04:11:11,2019-10-21 04:11:12,0.838s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CHECK_CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Continue',,2019-10-21 04:11:12,2019-10-21 04:11:15,2.820s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/CONTINUE""), ""Continue"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'I accept',,2019-10-21 04:11:15,2019-10-21 04:11:18,3.303s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Consumer_Personal_ Details/I_AGREE""), ""I agree"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'I agree',,2019-10-21 04:11:18,2019-10-21 04:11:19,1.370s,PASSED
+"pages.Payment_Page.verifyUserDetails(firstName, lastName, emailAddress, """", ""Savings"")",Chrome 76.0.3809.100,,,2019-10-21 04:11:19,2019-10-21 04:11:24,4.324s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PROCESS_PAYMENT""), ""Process Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Process Payment',,2019-10-21 04:11:24,2019-10-21 04:11:25,1.529s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Verification_ Details/YES_BUTTON""), ""yes button"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Yes',,2019-10-21 04:11:25,2019-10-21 04:11:27,2.042s,PASSED
+"verifyElementPresent(findTestObject(""MAKE_ PAYMENT/Verification_ Details/PENDING""), 30)",Chrome 76.0.3809.100,Verify Payment Status,,2019-10-21 04:11:27,2019-10-21 04:11:28,0.407s,PASSED
+PaymentID = pages.Payment_Page.verifyECheckPaymentApproval(referenceNum),Chrome 76.0.3809.100,Verify details and notedown payment id,,2019-10-21 04:11:28,2019-10-21 04:11:30,2.849s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_PAYMENT""), ""Search Payment"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search Payment',,2019-10-21 04:11:30,2019-10-21 04:11:31,1.068s,PASSED
+waitForPageLoad(10),Chrome 76.0.3809.100,,,2019-10-21 04:11:31,2019-10-21 04:11:31,0.058s,PASSED
+pages.Search_Page.switchToWindow(),Chrome 76.0.3809.100,,,2019-10-21 04:11:31,2019-10-21 04:11:37,5.468s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SEARCH_PAYMENT/ELECTRONIC_CHECK""), ""Echeck"", [mediumWait])",Chrome 76.0.3809.100,Select 'E-check' radio button,,2019-10-21 04:11:37,2019-10-21 04:11:44,6.799s,PASSED
+"pages.Search_Page.setSearchDetails(lastName, VISA, checkingAccNum)",Chrome 76.0.3809.100,"Enter billing last name,savings acc num",,2019-10-21 04:11:44,2019-10-21 04:11:47,3.298s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_BUTTON""), ""Search"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search',,2019-10-21 04:11:47,2019-10-21 04:11:50,2.983s,PASSED
+pages.Payment_Page.verifyPaymentDetailsInReceipt(PaymentID),Chrome 76.0.3809.100,Verify payment details,,2019-10-21 04:11:50,2019-10-21 04:11:50,0.332s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEARCH_ ICON""), ""SearchIcon"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Search' icon to generate receipt,,2019-10-21 04:11:50,2019-10-21 04:11:52,1.181s,PASSED
+delay(mediumWait),Chrome 76.0.3809.100,,,2019-10-21 04:11:52,2019-10-21 04:11:57,5.003s,PASSED
+"scrollToElement(findTestObject(""SEARCH_PAYMENT/CLOSE_BUTTON""), 30)",Chrome 76.0.3809.100,,,2019-10-21 04:11:57,2019-10-21 04:11:57,0.286s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/EMAIL_ RECEIPT""), ""Email Receipt"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Email Receipt',,2019-10-21 04:11:57,2019-10-21 04:11:58,1.427s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SEARCH_PAYMENT/EMAIL_ ADDRESS""), emailAddress, ""EmailAddress"", [pageLoadTime])",Chrome 76.0.3809.100,Enter 'Email address',,2019-10-21 04:11:58,2019-10-21 04:12:00,2.146s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SEARCH_PAYMENT/SEND_ EMAIL_BUTTON""), ""Send Email"", [pageLoadTime])",Chrome 76.0.3809.100,Click on 'Send Email',,2019-10-21 04:12:00,2019-10-21 04:12:03,2.414s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-10-21 04:12:03,2019-10-21 04:12:04,1.268s,PASSED
+Start tear down : tearDownTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:12:04,2019-10-21 04:12:04,0.000s,PASSED
+Start listener action : afterTestCase,Chrome 76.0.3809.100,,,2019-10-21 04:12:04,2019-10-21 04:12:04,0.001s,PASSED

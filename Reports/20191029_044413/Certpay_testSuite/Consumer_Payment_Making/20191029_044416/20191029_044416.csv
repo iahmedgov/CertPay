@@ -1,0 +1,44 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Consumer_Payment_Making,Firefox 68.0,,,2019-10-29 04:44:50,2019-10-29 04:48:52,4m - 2.148s,INCOMPLETE
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_001_Credit_SingleLine_Payment,Firefox 68.0,,,2019-10-29 04:44:52,2019-10-29 04:45:47,54.656s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:44:54,2019-10-29 04:44:54,0.008s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,Open Certpay application,,2019-10-29 04:44:57,2019-10-29 04:45:44,47.499s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,Enter valid Bureau code,,2019-10-29 04:45:44,2019-10-29 04:45:46,2.282s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,Click on 'Begin Payment',,2019-10-29 04:45:46,2019-10-29 04:45:47,0.327s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:45:47,2019-10-29 04:45:47,0.000s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_002_Credit_MultiLine_Payment,Firefox 68.0,,,2019-10-29 04:45:47,2019-10-29 04:46:29,41.885s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:45:48,2019-10-29 04:45:48,0.001s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,Open Certpay application,,2019-10-29 04:45:48,2019-10-29 04:46:27,38.789s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,Enter valid Bureau code,,2019-10-29 04:46:27,2019-10-29 04:46:29,1.385s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,Click on 'Begin Payment',,2019-10-29 04:46:29,2019-10-29 04:46:29,0.122s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:46:29,2019-10-29 04:46:29,0.001s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_003_Echeck_Checking_SingleLine_Payment,Firefox 68.0,,,2019-10-29 04:46:29,2019-10-29 04:47:00,31.488s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:46:29,2019-10-29 04:46:29,0.002s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,Open Certpay application,,2019-10-29 04:46:30,2019-10-29 04:46:58,28.717s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,Enter valid Bureau code,,2019-10-29 04:46:58,2019-10-29 04:47:00,1.357s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,Click on 'Begin Payment',,2019-10-29 04:47:00,2019-10-29 04:47:00,0.317s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:47:00,2019-10-29 04:47:00,0.005s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_004_Echeck_Checking_MultiLine_Payment,Firefox 68.0,,,2019-10-29 04:47:00,2019-10-29 04:47:53,52.458s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:47:01,2019-10-29 04:47:01,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,Open Certpay application,,2019-10-29 04:47:03,2019-10-29 04:47:51,47.652s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,Enter valid Bureau code,,2019-10-29 04:47:51,2019-10-29 04:47:52,1.532s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,Click on 'Begin Payment',,2019-10-29 04:47:52,2019-10-29 04:47:53,0.087s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:47:53,2019-10-29 04:47:53,0.061s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_005_Echeck_Savings_SingleLine_Payment,Firefox 68.0,,,2019-10-29 04:47:53,2019-10-29 04:48:21,28.379s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:47:54,2019-10-29 04:47:54,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,Open Certpay application,,2019-10-29 04:47:55,2019-10-29 04:48:19,23.892s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,Enter valid Bureau code,,2019-10-29 04:48:19,2019-10-29 04:48:21,2.299s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,Click on 'Begin Payment',,2019-10-29 04:48:21,2019-10-29 04:48:21,0.160s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:48:21,2019-10-29 04:48:21,0.001s,PASSED
+,,,,,,,
+Test Cases/Consumer_Make_Payment/TC_006_Echeck_Savings_MultiLine_Payment,Firefox 68.0,,,2019-10-29 04:48:21,2019-10-29 04:48:52,31.091s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:48:22,2019-10-29 04:48:22,0.000s,PASSED
+"utilities.SafeActions.openBrowser(certpay_url, [pageLoadTime])",Firefox 68.0,Open Certpay application,,2019-10-29 04:48:23,2019-10-29 04:48:51,28.341s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""MAKE_ PAYMENT/Home_ Page/BUREAU_CODE""), bureauCode, ""Bureau code"", [pageLoadTime])",Firefox 68.0,Enter valid Bureau code,,2019-10-29 04:48:51,2019-10-29 04:48:52,1.192s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""MAKE_ PAYMENT/Home_ Page/BEGIN_PAYMENT""), ""Begin payment"", [pageLoadTime])",Firefox 68.0,Click on 'Begin Payment',,2019-10-29 04:48:52,2019-10-29 04:48:52,0.064s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:48:52,2019-10-29 04:48:52,0.000s,PASSED

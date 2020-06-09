@@ -1,0 +1,52 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Certpay_Quicksti_Sameday_Refunds,Firefox 68.0,,,2019-10-25 03:55:56,2019-10-25 04:04:18,8m - 21.465s,INCOMPLETE
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_001_VISA_SingleTxn_Sameday_FullRefund,Firefox 68.0,,,2019-10-25 03:55:59,2019-10-25 03:58:09,2m - 10.398s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-25 03:55:59,2019-10-25 03:55:59,0.140s,PASSED
+"callTestCase(findTestCase(""Certpay_Quicksti/TC_001_Visa_SingleLinePayment""), [""expMonth"":""03"", ""expYear"":""2022"", ""securityCode"":""207"", ""paymentAmount"":""15.00"", ""quantity"":""2"", ""referenceNum"":""11"", ""address"":""14-6"", ... ], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-25 03:56:03,2019-10-25 03:57:39,1m - 35.495s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/REQUEST_REFUND""), ""Request refund"", [pageLoadTime])",Firefox 68.0,,,2019-10-25 03:57:39,2019-10-25 03:57:40,1.586s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/SET_TO_FULL_REFUND""), ""Set to full refund"", [pageLoadTime])",Firefox 68.0,,,2019-10-25 03:57:40,2019-10-25 03:57:42,1.604s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SAME_DAY_REFUNDS/CUSTOMER_REQUESTED_REFUND_RADIO_BUTTON""), ""Customer requested"", [pageLoadTime])",Firefox 68.0,Select 'Bank card' radio button,,2019-10-25 03:57:42,2019-10-25 03:57:43,1.590s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""SAME_DAY_REFUNDS/REASON_FOR_REFUND_DROPDOWN""), ""Not For This Bureau"", ""Reason for Refund"", [pageLoadTime])",Firefox 68.0,Select Payment type,,2019-10-25 03:57:43,2019-10-25 03:57:45,1.233s,PASSED
+"originalAmount = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/ORIGINAL_AMOUNT""))",Firefox 68.0,,,2019-10-25 03:57:45,2019-10-25 03:57:45,0.090s,PASSED
+"amountToRefund = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/AMOUNT_TO_REFUND""))",Firefox 68.0,,,2019-10-25 03:57:45,2019-10-25 03:57:45,0.196s,PASSED
+"result = verifyEqual(amountToRefund, originalAmount)",Firefox 68.0,,,2019-10-25 03:57:45,2019-10-25 03:57:45,0.009s,PASSED
+if (result),Firefox 68.0,,,2019-10-25 03:57:45,2019-10-25 03:57:49,4.104s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-25 03:57:49,2019-10-25 03:58:09,20.457s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_002_VISA_MultiTxn_Sameday_FullRefund,Firefox 68.0,,,2019-10-25 03:58:09,2019-10-25 03:59:54,1m - 44.377s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-25 03:58:10,2019-10-25 03:58:10,0.000s,PASSED
+"callTestCase(findTestCase(""Certpay_Quicksti/TC_002_Visa_MultiLinePayment""), [""paymentAmount"":""22.00"", ""quantity"":""2"", ""referenceNum"":""11"", ""comments"":""Testing"", ""paymentAmount2"":""33.00"", ""paymentType"":""Licenses"", ... ], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-25 03:58:10,2019-10-25 03:59:32,1m - 21.865s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/REQUEST_REFUND""), ""Request refund"", [pageLoadTime])",Firefox 68.0,,,2019-10-25 03:59:32,2019-10-25 03:59:35,3.277s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/SET_TO_FULL_REFUND""), ""Set to full refund"", [pageLoadTime])",Firefox 68.0,,,2019-10-25 03:59:35,2019-10-25 03:59:38,2.282s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SAME_DAY_REFUNDS/CUSTOMER_REQUESTED_REFUND_RADIO_BUTTON""), ""Customer requested"", [pageLoadTime])",Firefox 68.0,Select 'Bank card' radio button,,2019-10-25 03:59:38,2019-10-25 03:59:39,1.457s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""SAME_DAY_REFUNDS/REASON_FOR_REFUND_DROPDOWN""), ""Not For This Bureau"", ""Reason for Refund"", [pageLoadTime])",Firefox 68.0,Select Payment type,,2019-10-25 03:59:39,2019-10-25 03:59:40,1.152s,PASSED
+"originalAmount = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/ORIGINAL_AMOUNT""))",Firefox 68.0,,,2019-10-25 03:59:40,2019-10-25 03:59:41,0.410s,PASSED
+"amountToRefund = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/AMOUNT_TO_REFUND""))",Firefox 68.0,,,2019-10-25 03:59:41,2019-10-25 03:59:41,0.084s,PASSED
+"result = verifyEqual(amountToRefund, originalAmount)",Firefox 68.0,,,2019-10-25 03:59:41,2019-10-25 03:59:41,0.002s,PASSED
+if (result),Firefox 68.0,,,2019-10-25 03:59:41,2019-10-25 03:59:46,5.026s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-25 03:59:46,2019-10-25 03:59:54,8.087s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_003_VISA_SingleTxn_Sameday_PartialRefund,Firefox 68.0,,,2019-10-25 03:59:54,2019-10-25 04:02:06,2m - 12.116s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-25 03:59:54,2019-10-25 03:59:54,0.000s,PASSED
+"callTestCase(findTestCase(""Certpay_Quicksti/TC_001_Visa_SingleLinePayment""), [""expMonth"":""03"", ""expYear"":""2022"", ""securityCode"":""207"", ""paymentAmount"":""15.00"", ""quantity"":""2"", ""referenceNum"":""11"", ""address"":""14-6"", ... ], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-25 03:59:55,2019-10-25 04:01:31,1m - 36.442s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/REQUEST_REFUND""), ""Request refund"", [pageLoadTime])",Firefox 68.0,,,2019-10-25 04:01:31,2019-10-25 04:01:33,1.823s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SAME_DAY_REFUNDS/AMOUNT_TO_REFUND""), refundAmount, ""Amount"", [pageLoadTime])",Firefox 68.0,,,2019-10-25 04:01:33,2019-10-25 04:01:34,0.915s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SAME_DAY_REFUNDS/CUSTOMER_REQUESTED_REFUND_RADIO_BUTTON""), ""Customer requested"", [pageLoadTime])",Firefox 68.0,Select 'Bank card' radio button,,2019-10-25 04:01:34,2019-10-25 04:01:35,1.552s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""SAME_DAY_REFUNDS/REASON_FOR_REFUND_DROPDOWN""), ""Not For This Bureau"", ""Reason for Refund"", [pageLoadTime])",Firefox 68.0,Select Payment type,,2019-10-25 04:01:35,2019-10-25 04:01:37,1.379s,PASSED
+"originalAmount = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/ORIGINAL_AMOUNT""))",Firefox 68.0,,,2019-10-25 04:01:37,2019-10-25 04:01:37,0.085s,PASSED
+"result = verifyLessThanOrEqual(refundAmount, originalAmount)",Firefox 68.0,,,2019-10-25 04:01:37,2019-10-25 04:01:37,0.009s,PASSED
+if (result),Firefox 68.0,,,2019-10-25 04:01:37,2019-10-25 04:01:44,7.039s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-25 04:01:44,2019-10-25 04:02:06,22.175s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_004_VISA_MultiTxn_Sameday_PartialRefund,Firefox 68.0,,,2019-10-25 04:02:06,2019-10-25 04:04:18,2m - 11.943s,PASSED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-25 04:02:06,2019-10-25 04:02:06,0.000s,PASSED
+"callTestCase(findTestCase(""Certpay_Quicksti/TC_002_Visa_MultiLinePayment""), [""paymentAmount"":""22.00"", ""quantity"":""2"", ""referenceNum"":""11"", ""comments"":""Testing"", ""paymentAmount2"":""33.00"", ""paymentType"":""Licenses"", ... ], STOP_ON_FAILURE)",Firefox 68.0,,,2019-10-25 04:02:07,2019-10-25 04:03:57,1m - 50.561s,PASSED
+"utilities.SafeActions.safeClick(findTestObject(""SAME_DAY_REFUNDS/REQUEST_REFUND""), ""Request refund"", [pageLoadTime])",Firefox 68.0,,,2019-10-25 04:03:57,2019-10-25 04:03:59,1.566s,PASSED
+"utilities.SafeActions.safeType(findTestObject(""SAME_DAY_REFUNDS/AMOUNT_TO_REFUND""), refundAmount, ""Amount"", [pageLoadTime])",Firefox 68.0,,,2019-10-25 04:03:59,2019-10-25 04:04:00,0.979s,PASSED
+"utilities.SafeActions.safeCheck(findTestObject(""SAME_DAY_REFUNDS/CUSTOMER_REQUESTED_REFUND_RADIO_BUTTON""), ""Customer requested"", [pageLoadTime])",Firefox 68.0,Select 'Bank card' radio button,,2019-10-25 04:04:00,2019-10-25 04:04:01,1.408s,PASSED
+"utilities.SafeActions.safeSelectOptionInDropdownByVisibleText(findTestObject(""SAME_DAY_REFUNDS/REASON_FOR_REFUND_DROPDOWN""), ""Not For This Bureau"", ""Reason for Refund"", [pageLoadTime])",Firefox 68.0,Select Payment type,,2019-10-25 04:04:01,2019-10-25 04:04:02,1.366s,PASSED
+"originalAmount = pages.Quicksti.getAttributeValue(findTestObject(""SAME_DAY_REFUNDS/ORIGINAL_AMOUNT""))",Firefox 68.0,,,2019-10-25 04:04:02,2019-10-25 04:04:03,0.092s,PASSED
+"result = verifyLessThanOrEqual(refundAmount, originalAmount)",Firefox 68.0,,,2019-10-25 04:04:03,2019-10-25 04:04:03,0.002s,PASSED
+if (result),Firefox 68.0,,,2019-10-25 04:04:03,2019-10-25 04:04:12,9.935s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-25 04:04:12,2019-10-25 04:04:18,5.476s,PASSED

@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Quicksti_Sameday_Refunds,Firefox 68.0,,,2019-10-29 05:25:52,2019-10-29 05:38:52,13m - 0.870s,INCOMPLETE
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_001_VISA_SingleTxn_Sameday_FullRefund,Firefox 68.0,,,2019-10-29 05:25:52,2019-10-29 05:28:02,2m - 9.564s,FAILED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 05:25:53,2019-10-29 05:25:53,0.008s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 05:25:55,2019-10-29 05:25:58,3.371s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 05:25:58,2019-10-29 05:25:58,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 05:25:58,2019-10-29 05:27:47,1m - 49.029s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 05:27:47,2019-10-29 05:28:02,14.874s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_002_VISA_MultiTxn_Sameday_FullRefund,Firefox 68.0,,,2019-10-29 05:28:02,2019-10-29 05:28:45,42.704s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 05:28:02,2019-10-29 05:28:02,0.001s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Firefox 68.0,,,2019-10-29 05:28:03,2019-10-29 05:28:04,0.157s,PASSED
+amountList = [],Firefox 68.0,,,2019-10-29 05:28:04,2019-10-29 05:28:04,0.000s,PASSED
+referenceList = [],Firefox 68.0,,,2019-10-29 05:28:04,2019-10-29 05:28:04,0.000s,PASSED
+paymentTypeList = [],Firefox 68.0,,,2019-10-29 05:28:04,2019-10-29 05:28:04,0.002s,PASSED
+quantityList = [],Firefox 68.0,,,2019-10-29 05:28:04,2019-10-29 05:28:04,0.001s,PASSED
+commentsList = [],Firefox 68.0,,,2019-10-29 05:28:04,2019-10-29 05:28:04,0.001s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 05:28:04,2019-10-29 05:28:04,0.000s,PASSED
+list = new java.util.ArrayList(),Firefox 68.0,,,2019-10-29 05:28:04,2019-10-29 05:28:04,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 05:28:04,2019-10-29 05:28:45,41.066s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 05:28:45,2019-10-29 05:28:45,0.008s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_003_VISA_SingleTxn_Sameday_PartialRefund,Firefox 68.0,,,2019-10-29 05:28:45,2019-10-29 05:30:46,2m - 1.678s,FAILED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 05:28:45,2019-10-29 05:28:45,0.000s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 05:28:46,2019-10-29 05:28:46,0.109s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 05:28:46,2019-10-29 05:28:46,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 05:28:46,2019-10-29 05:30:26,1m - 40.402s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 05:30:26,2019-10-29 05:30:46,20.141s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_004_VISA_MultiTxn_Sameday_PartialRefund,Firefox 68.0,,,2019-10-29 05:30:46,2019-10-29 05:38:52,8m - 6.071s,FAILED
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 05:30:46,2019-10-29 05:30:46,0.000s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:30:47,0.160s,PASSED
+amountList = [],Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:30:47,0.000s,PASSED
+referenceList = [],Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:30:47,0.001s,PASSED
+paymentTypeList = [],Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:30:47,0.001s,PASSED
+quantityList = [],Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:30:47,0.001s,PASSED
+commentsList = [],Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:30:47,0.000s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:30:47,0.001s,PASSED
+list = new java.util.ArrayList(),Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:30:47,0.000s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 05:30:47,2019-10-29 05:38:49,8m - 1.860s,PASSED
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 05:38:49,2019-10-29 05:38:52,3.171s,PASSED

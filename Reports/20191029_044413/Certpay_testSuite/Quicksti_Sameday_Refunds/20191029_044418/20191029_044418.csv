@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Quicksti_Sameday_Refunds,Firefox 68.0,,,2019-10-29 04:45:20,2019-10-29 04:48:29,3m - 8.909s,INCOMPLETE
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_001_VISA_SingleTxn_Sameday_FullRefund,Firefox 68.0,,,2019-10-29 04:45:22,2019-10-29 04:46:15,53.133s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:45:23,2019-10-29 04:45:23,0.010s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 04:45:25,2019-10-29 04:45:27,2.558s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 04:45:27,2019-10-29 04:45:27,0.016s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 04:45:27,2019-10-29 04:46:15,48.131s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:46:15,2019-10-29 04:46:15,0.001s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_002_VISA_MultiTxn_Sameday_FullRefund,Firefox 68.0,,,2019-10-29 04:46:15,2019-10-29 04:47:07,51.378s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:46:15,2019-10-29 04:46:16,0.172s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Firefox 68.0,,,2019-10-29 04:46:16,2019-10-29 04:46:17,0.182s,PASSED
+amountList = [],Firefox 68.0,,,2019-10-29 04:46:17,2019-10-29 04:46:17,0.001s,PASSED
+referenceList = [],Firefox 68.0,,,2019-10-29 04:46:17,2019-10-29 04:46:17,0.001s,PASSED
+paymentTypeList = [],Firefox 68.0,,,2019-10-29 04:46:17,2019-10-29 04:46:17,0.001s,PASSED
+quantityList = [],Firefox 68.0,,,2019-10-29 04:46:17,2019-10-29 04:46:17,0.001s,PASSED
+commentsList = [],Firefox 68.0,,,2019-10-29 04:46:17,2019-10-29 04:46:17,0.001s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 04:46:17,2019-10-29 04:46:17,0.001s,PASSED
+list = new java.util.ArrayList(),Firefox 68.0,,,2019-10-29 04:46:17,2019-10-29 04:46:17,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 04:46:17,2019-10-29 04:47:07,50.090s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:47:07,2019-10-29 04:47:07,0.000s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_003_VISA_SingleTxn_Sameday_PartialRefund,Firefox 68.0,,,2019-10-29 04:47:07,2019-10-29 04:47:48,40.847s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:47:07,2019-10-29 04:47:07,0.001s,PASSED
+"data = findTestData(""Data Files/Certpay/SingleBureau_SingleLine"")",Firefox 68.0,,,2019-10-29 04:47:08,2019-10-29 04:47:12,3.284s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 04:47:12,2019-10-29 04:47:12,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 04:47:12,2019-10-29 04:47:48,35.976s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:47:48,2019-10-29 04:47:48,0.001s,PASSED
+,,,,,,,
+Test Cases/SameDay_Refunds/TC_004_VISA_MultiTxn_Sameday_PartialRefund,Firefox 68.0,,,2019-10-29 04:47:48,2019-10-29 04:48:29,41.005s,ERROR
+Start listener action : beforeTestCase,Firefox 68.0,,,2019-10-29 04:47:48,2019-10-29 04:47:48,0.001s,PASSED
+"data = findTestData(""Certpay/SingleBureau_MultiLine"")",Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:47:50,0.307s,PASSED
+amountList = [],Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:47:50,0.001s,PASSED
+referenceList = [],Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:47:50,0.001s,PASSED
+paymentTypeList = [],Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:47:50,0.007s,PASSED
+quantityList = [],Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:47:50,0.001s,PASSED
+commentsList = [],Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:47:50,0.000s,PASSED
+paymentIdList = [],Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:47:50,0.001s,PASSED
+list = new java.util.ArrayList(),Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:47:50,0.001s,PASSED
+for (def index : (1..data.getRowNumbers())),Firefox 68.0,,,2019-10-29 04:47:50,2019-10-29 04:48:29,38.314s,ERROR
+Start listener action : afterTestCase,Firefox 68.0,,,2019-10-29 04:48:29,2019-10-29 04:48:29,0.000s,PASSED
